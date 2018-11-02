@@ -1,0 +1,19 @@
+Configuring servant-client-core-0.14.1...
+clang: warning: argument unused during compilation: '-nopie' [-Wunused-command-line-argument]
+Preprocessing library for servant-client-core-0.14.1..
+Building library for servant-client-core-0.14.1..
+[ 1 of 12] Compiling Servant.Client.Core.Internal.BaseUrl ( src/Servant/Client/Core/Internal/BaseUrl.hs, .stack-work/dist/x86_64-osx/Cabal-2.2.0.1/build/Servant/Client/Core/Internal/BaseUrl.o )
+[ 2 of 12] Compiling Servant.Client.Core.Internal.Generic ( src/Servant/Client/Core/Internal/Generic.hs, .stack-work/dist/x86_64-osx/Cabal-2.2.0.1/build/Servant/Client/Core/Internal/Generic.o )
+[ 3 of 12] Compiling Servant.Client.Core.Internal.Request ( src/Servant/Client/Core/Internal/Request.hs, .stack-work/dist/x86_64-osx/Cabal-2.2.0.1/build/Servant/Client/Core/Internal/Request.o )
+[ 4 of 12] Compiling Servant.Client.Core.Internal.ClientF ( src/Servant/Client/Core/Internal/ClientF.hs, .stack-work/dist/x86_64-osx/Cabal-2.2.0.1/build/Servant/Client/Core/Internal/ClientF.o )
+[ 5 of 12] Compiling Servant.Client.Core.Internal.BasicAuth ( src/Servant/Client/Core/Internal/BasicAuth.hs, .stack-work/dist/x86_64-osx/Cabal-2.2.0.1/build/Servant/Client/Core/Internal/BasicAuth.o )
+[ 6 of 12] Compiling Servant.Client.Core.Internal.Auth ( src/Servant/Client/Core/Internal/Auth.hs, .stack-work/dist/x86_64-osx/Cabal-2.2.0.1/build/Servant/Client/Core/Internal/Auth.o )
+[ 7 of 12] Compiling Servant.Client.Core.Internal.RunClient ( src/Servant/Client/Core/Internal/RunClient.hs, .stack-work/dist/x86_64-osx/Cabal-2.2.0.1/build/Servant/Client/Core/Internal/RunClient.o )
+[ 8 of 12] Compiling Servant.Client.Core.Internal.HasClient ( src/Servant/Client/Core/Internal/HasClient.hs, .stack-work/dist/x86_64-osx/Cabal-2.2.0.1/build/Servant/Client/Core/Internal/HasClient.o )
+[ 9 of 12] Compiling Servant.Client.Core ( src/Servant/Client/Core.hs, .stack-work/dist/x86_64-osx/Cabal-2.2.0.1/build/Servant/Client/Core.o )
+[10 of 12] Compiling Servant.Client.Core.Reexport ( src/Servant/Client/Core/Reexport.hs, .stack-work/dist/x86_64-osx/Cabal-2.2.0.1/build/Servant/Client/Core/Reexport.o )
+[11 of 12] Compiling Servant.Client.Free ( src/Servant/Client/Free.hs, .stack-work/dist/x86_64-osx/Cabal-2.2.0.1/build/Servant/Client/Free.o )
+[12 of 12] Compiling Servant.Client.Generic ( src/Servant/Client/Generic.hs, .stack-work/dist/x86_64-osx/Cabal-2.2.0.1/build/Servant/Client/Generic.o )
+ignoring (possibly broken) abi-depends field for packages
+Installing library in /Users/pokki/.stack/snapshots/x86_64-osx/lts-12.14/8.4.3/lib/x86_64-osx-ghc-8.4.3/servant-client-core-0.14.1-E5jzkEZeHBY7Gt2FUbT48C
+Registering library for servant-client-core-0.14.1..

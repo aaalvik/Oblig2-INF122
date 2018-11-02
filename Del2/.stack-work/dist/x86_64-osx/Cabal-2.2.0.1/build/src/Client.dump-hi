@@ -1,0 +1,1556 @@
+
+==================== FINAL INTERFACE ====================
+2018-10-30 15:32:46.80451 UTC
+
+interface Oblig2-INF122-0.1.0.0-8cpJ2QxhiFI3jrCtHwoMCS:Client 8043
+  interface hash: 70471df977f62bdee6f9c1541db9107a
+  ABI hash: 541d95078277e20d38485ebcb2c6e439
+  export-list hash: 9cc6c7217b64a25a4f49eff7a1a17ec2
+  orphan hash: 8a42943803d7d2b38d212abe84df6158
+  flag hash: 2e369f466d407a05cc1cefeb8229f04e
+  opt_hash: 14e536840aca4e889cad654e6f9b79c1
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Client.api
+  Client.getStepsFromStudent
+  Client.putStepsFromStudent
+  Client.query
+  Client.run
+  Client.steps
+  Client.API
+module dependencies: Convert Types
+package dependencies: StateVar-1.1.1.1 aeson-1.3.1.1 array-0.5.2.0
+                      attoparsec-0.13.2.2 attoparsec-iso8601-1.0.1.0 base-4.11.1.0
+                      base-compat-0.10.5 base-orphans-0.7 base64-bytestring-1.0.0.1
+                      basement-0.0.8 bifunctors-5.5.3 binary-0.8.5.1
+                      blaze-builder-0.4.1.0 bytestring-0.10.8.2 case-insensitive-1.2.0.11
+                      comonad-5.0.4 containers-0.5.11.0 contravariant-1.4.1 cookie-0.4.4
+                      data-default-class-0.1.2.0 deepseq-1.4.3.0 distributive-0.5.3
+                      dlist-0.8.0.5 exceptions-0.10.0 free-5.0.2 generics-sop-0.3.2.0
+                      ghc-boot-th-8.4.3 ghc-prim-0.5.2.0 hashable-1.2.7.0
+                      http-api-data-0.3.8.1 http-client-0.5.13.1 http-media-0.7.1.3
+                      http-types-0.12.2 integer-gmp-1.0.2.0 integer-logarithms-1.0.2.2
+                      memory-0.14.18 monad-control-1.0.2.3 mtl-2.2.2 network-2.6.3.6
+                      network-uri-2.6.1.0 parsec-3.1.13.0 pretty-1.1.3.6
+                      primitive-0.6.3.0 profunctors-5.2.2 random-1.1 safe-0.3.17
+                      scientific-0.3.6.2 semigroupoids-5.2.2 servant-0.14.1
+                      servant-client-0.14 servant-client-core-0.14.1 singleton-bool-0.1.4
+                      stm-2.4.5.1 streaming-commons-0.2.1.0 string-conversions-0.4.0.1
+                      tagged-0.8.5 template-haskell-2.13.0.0 text-1.2.3.1
+                      th-abstraction-0.2.8.0 th-lift-0.7.11 th-lift-instances-0.1.11
+                      time-1.8.0.2 time-locale-compat-0.1.1.5 transformers-0.5.5.0
+                      transformers-base-0.4.5.2 transformers-compat-0.6.2
+                      unordered-containers-0.2.9.0 uri-bytestring-0.3.2.1
+                      utf8-string-1.0.1.1 uuid-types-1.0.3 vault-0.3.1.2 vector-0.12.0.1
+                      zlib-0.6.2
+orphans: generics-sop-0.3.2.0:Generics.SOP.Instances
+         generics-sop-0.3.2.0:Generics.SOP.Constraint
+         attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
+         th-lift-instances-0.1.11:Instances.TH.Lift
+         th-lift-0.7.11:Language.Haskell.TH.Lift
+         vector-0.12.0.1:Data.Vector.Unboxed
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
+         http-client-0.5.13.1:Network.HTTP.Client.Request
+         basement-0.0.8:Basement.UArray.Base basement-0.0.8:Basement.Block
+         transformers-0.5.5.0:Control.Monad.Trans.Error
+         network-2.6.3.6:Network.Socket stm-2.4.5.1:Control.Monad.STM
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.1:Data.Text.Lazy
+         text-1.2.3.1:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         text-1.2.3.1:Data.Text.Show
+         bytestring-0.10.8.2:Data.ByteString.Builder base-4.11.1.0:GHC.Float
+         base-4.11.1.0:GHC.Base
+family instance modules: Oblig2-INF122-0.1.0.0-8cpJ2QxhiFI3jrCtHwoMCS:Types
+                         aeson-1.3.1.1:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
+                         base-4.11.1.0:Control.Applicative base-4.11.1.0:Data.Complex
+                         base-4.11.1.0:Data.Functor.Compose base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity
+                         base-4.11.1.0:Data.Functor.Product base-4.11.1.0:Data.Functor.Sum
+                         base-4.11.1.0:Data.Monoid base-4.11.1.0:Data.Semigroup
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:Data.Version
+                         base-4.11.1.0:Data.Void base-4.11.1.0:GHC.Exts
+                         base-4.11.1.0:GHC.Generics base-4.11.1.0:GHC.IO.Exception
+                         basement-0.0.8:Basement.Block.Base basement-0.0.8:Basement.Monad
+                         basement-0.0.8:Basement.MutableBuilder basement-0.0.8:Basement.Nat
+                         basement-0.0.8:Basement.NonEmpty
+                         basement-0.0.8:Basement.Numerical.Subtractive
+                         basement-0.0.8:Basement.PrimType basement-0.0.8:Basement.String
+                         basement-0.0.8:Basement.String.Encoding.ASCII7
+                         basement-0.0.8:Basement.String.Encoding.ISO_8859_1
+                         basement-0.0.8:Basement.String.Encoding.UTF16
+                         basement-0.0.8:Basement.String.Encoding.UTF32
+                         basement-0.0.8:Basement.Types.OffsetSize
+                         basement-0.0.8:Basement.UArray.Base
+                         basement-0.0.8:Basement.UTF8.Base
+                         bifunctors-5.5.3:Data.Bifunctor.Biff
+                         bifunctors-5.5.3:Data.Bifunctor.Clown
+                         bifunctors-5.5.3:Data.Bifunctor.Flip
+                         bifunctors-5.5.3:Data.Bifunctor.Join
+                         bifunctors-5.5.3:Data.Bifunctor.Joker
+                         bifunctors-5.5.3:Data.Bifunctor.Product
+                         bifunctors-5.5.3:Data.Bifunctor.Sum
+                         bifunctors-5.5.3:Data.Bifunctor.Tannen
+                         bifunctors-5.5.3:Data.Bifunctor.Wrapped
+                         containers-0.5.11.0:Data.IntMap.Internal
+                         containers-0.5.11.0:Data.IntSet.Internal
+                         containers-0.5.11.0:Data.Map.Internal
+                         containers-0.5.11.0:Data.Sequence.Internal
+                         containers-0.5.11.0:Data.Set.Internal containers-0.5.11.0:Data.Tree
+                         dlist-0.8.0.5:Data.DList free-5.0.2:Control.Monad.Free
+                         free-5.0.2:Control.Monad.Trans.Free
+                         generics-sop-0.3.2.0:Generics.SOP.BasicFunctors
+                         generics-sop-0.3.2.0:Generics.SOP.GGP
+                         generics-sop-0.3.2.0:Generics.SOP.Instances
+                         generics-sop-0.3.2.0:Generics.SOP.NP
+                         generics-sop-0.3.2.0:Generics.SOP.NS
+                         ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         http-api-data-0.3.8.1:Web.Internal.FormUrlEncoded
+                         http-client-0.5.13.1:Network.HTTP.Client
+                         monad-control-1.0.2.3:Control.Monad.Trans.Control
+                         network-uri-2.6.1.0:Network.URI
+                         pretty-1.1.3.6:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.6:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array
+                         primitive-0.6.3.0:Data.Primitive.ByteArray
+                         servant-0.14.1:Servant.API.ContentTypes
+                         servant-0.14.1:Servant.API.Generic
+                         servant-0.14.1:Servant.API.IsSecure
+                         servant-0.14.1:Servant.API.Stream servant-0.14.1:Servant.API.Verbs
+                         servant-0.14.1:Servant.Links
+                         servant-client-0.14:Servant.Client.Internal.HttpClient
+                         servant-client-core-0.14.1:Servant.Client.Core.Internal.BaseUrl
+                         servant-client-core-0.14.1:Servant.Client.Core.Internal.HasClient
+                         servant-client-core-0.14.1:Servant.Client.Core.Internal.Request
+                         tagged-0.8.5:Data.Tagged
+                         template-haskell-2.13.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.1:Data.Text text-1.2.3.1:Data.Text.Lazy
+                         th-abstraction-0.2.8.0:Language.Haskell.TH.Datatype
+                         unordered-containers-0.2.9.0:Data.HashMap.Base
+                         unordered-containers-0.2.9.0:Data.HashSet
+                         uri-bytestring-0.3.2.1:URI.ByteString.Types
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+                         zlib-0.6.2:Codec.Compression.Zlib.Stream
+import  -/  Convert 19badcc5cacefd88b920e8e831a21612
+  exports: 4b399ae8be1d58a7066f79a163891cf2
+  toGeneric 0da80fee0d941da50ec88f17d063f9d8
+import  -/  Types 1dea4a9e2a5fd9320e8b4119029235e3
+  exports: a028046eff8517520af661d4fa72fc7f
+  Expr 2241269ddc2725405dfddd27b09f4f0e
+  GenericAST 42e90e148e9418bd521e3b242d29289a
+  InputString 9ca8a35bf1f6269f2a247bc1425c146a
+  ResponseMsg bf35ce17a75727cd14a8e7ecc76fbdc0
+  StepsWithKey 6f62b1a835e1beeb2abe7c65a081d64d
+  StepsWithKey 42e90e148e9418bd521e3b242d29289a
+  evalSteps 42e90e148e9418bd521e3b242d29289a
+  key 42e90e148e9418bd521e3b242d29289a
+import  -/  aeson-1.3.1.1:Data.Aeson c2e0eb22771d71f2c3c52186a6e01949
+import  -/  base-4.11.1.0:Data.Either 39d922b371c4c52d426e9ee66de8371a
+import  -/  base-4.11.1.0:Data.Proxy a80a60a2fdceabfeb4d110d23b808844
+import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
+import  -/  base-4.11.1.0:GHC.Generics 4d1469b3e29804a05a1be33d11accff6
+import  -/  base-4.11.1.0:Prelude 0750c25585e2b797cd78291d423d39dd
+import  -/  base-4.11.1.0:System.IO ce09fff7d191d14067bddc2efd9b53a4
+import  -/  ghc-prim-0.5.2.0:GHC.Types d9b3023de7feae4a5308d643da5543f7
+import  -/  http-client-0.5.13.1:Network.HTTP.Client 037a3a152e816ef78b2a637b5616a083
+import  -/  http-client-0.5.13.1:Network.HTTP.Client.Manager 8dd743acf7015b44679a1ac4130198a0
+import  -/  servant-0.14.1:Servant.API 4175ee3ed401eb0b46b1a3b8f785e7b1
+import  -/  servant-0.14.1:Servant.API.Alternative 85e18619f60990bca5da2a5f42bd48f7
+import  -/  servant-0.14.1:Servant.API.ContentTypes d10cba7f4b9eae2cc7138cbaa4bd3e7d
+import  -/  servant-0.14.1:Servant.API.QueryParam d9fb8400b188ed6d12108461a63bcfe4
+import  -/  servant-0.14.1:Servant.API.ReqBody 05ede473f13dc4faff6e75dfa8865ba5
+import  -/  servant-0.14.1:Servant.API.Sub 21a711018cc6d1031026be5adcac1794
+import  -/  servant-0.14.1:Servant.API.Verbs cdd2a5316188d3aa2b6fe4b0adef1ce5
+import  -/  servant-client-0.14:Servant.Client 9e9abe7ff8b41ffcd8f105dff59e9fc4
+import  -/  servant-client-0.14:Servant.Client.Internal.HttpClient 0534587ab8e21229fe69b9696da68cc5
+import  -/  servant-client-core-0.14.1:Servant.Client.Core.Internal.BaseUrl a2c57f7788a8951b58e38b92c395be22
+bdfce0c814195dff1653225fbf37fa70
+  $s$fFromJSON[] ::
+    Data.Aeson.Types.FromJSON.FromJSON [Types.GenericAST]
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ [Types.GenericAST]
+                  Types.$fFromJSONGenericAST_$cparseJSONList
+                  (Data.Aeson.Types.FromJSON.$fFromJSONKey[]_$cparseJSONList
+                     @ Types.GenericAST
+                     Types.$fFromJSONGenericAST) -}
+949f254bacbe4bf6ee5b0a34e0f3374e
+  $s$fHasClientm:>1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Client.$s$fHasClientm:>2) -}
+7236cb05b0a71b028831c26169a80aab
+  $s$fHasClientm:>2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("studentKey"#) -}
+c89c0dd2b87a15d250c026fdade95718
+  $s$fHasClientm:>25_$s$fMimeUnrenderTYPEJSONa ::
+    Servant.API.ContentTypes.MimeUnrender
+      Servant.API.ContentTypes.JSON [Types.GenericAST]
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ *
+                  @ Servant.API.ContentTypes.JSON
+                  @ [Types.GenericAST]
+                  Servant.API.ContentTypes.$fAcceptTYPEJSON
+                  (\ (ds :: Data.Proxy.Proxy Servant.API.ContentTypes.JSON) ->
+                   Servant.API.ContentTypes.eitherDecodeLenient
+                     @ [Types.GenericAST]
+                     Client.$s$fFromJSON[])
+                  (\ (p :: Data.Proxy.Proxy Servant.API.ContentTypes.JSON)
+                     (ds :: Network.HTTP.Media.MediaType.Internal.MediaType)
+                     (eta :: Data.ByteString.Lazy.Internal.ByteString) ->
+                   Servant.API.ContentTypes.eitherDecodeLenient
+                     @ [Types.GenericAST]
+                     Client.$s$fFromJSON[]
+                     eta) -}
+f27bc7afc111a002141f1bde408fbe7a
+  $s$fHasClientm:>4_$cclientWithRoute1 ::
+    ('[Servant.API.ContentTypes.JSON] :: [*])
+    GHC.Types.~~ ('[Servant.API.ContentTypes.JSON] :: [*])
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ [*]
+                   @ [*]
+                   @ '[Servant.API.ContentTypes.JSON]
+                   @ '[Servant.API.ContentTypes.JSON]
+                   @~ <'[Servant.API.ContentTypes.JSON]>_N) -}
+e0403abec9b89d6d3890eac71544304b
+  $s$fHasClientm:>4_$cclientWithRoute2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Client.$s$fHasClientm:>4_$cclientWithRoute3) -}
+fd4e0b97f53d07f024fb041e5311fd8b
+  $s$fHasClientm:>4_$cclientWithRoute3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("putStepsFromStudent"#) -}
+ba22d33e9192a747460c46d9cd2caaf5
+  $s$fHasClientm:>4_$cclientWithRoute5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Client.$s$fHasClientm:>4_$cclientWithRoute6) -}
+93c95b6911997b2083a5cc6410b1d7c3
+  $s$fHasClientm:>4_$cclientWithRoute6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("steps"#) -}
+ec3879232a1921200cc0c6fdcf636333
+  $s$fHasClientm:>4_$cclientWithRoute8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Client.$s$fHasClientm:>4_$cclientWithRoute9) -}
+909d1ab54aa7eafbb8bf6c7c4b12b9c8
+  $s$fHasClientm:>4_$cclientWithRoute9 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("getStepsFromStudent"#) -}
+e4207419a88fd22c003313ecab9b4611
+  $s$fHasClientm:>4_$cclientWithRoute_$s$fHasClientm:>1 ::
+    Servant.Client.Core.Internal.HasClient.HasClient
+      Servant.Client.Internal.HttpClient.ClientM
+      (Servant.API.ReqBody.ReqBody'
+         mods (Servant.API.ContentTypes.JSON : cts) Types.InputString
+       Servant.API.Sub.:> Servant.API.Verbs.Verb
+                            'Network.HTTP.Types.Method.POST
+                            200
+                            '[Servant.API.ContentTypes.JSON]
+                            [Types.GenericAST])
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ mods :: [*] @ cts :: [*].
+                  @ Servant.Client.Internal.HttpClient.ClientM
+                  @ (Servant.API.ReqBody.ReqBody'
+                       mods (Servant.API.ContentTypes.JSON : cts) Types.InputString
+                     Servant.API.Sub.:> Servant.API.Verbs.Verb
+                                          'Network.HTTP.Types.Method.POST
+                                          200
+                                          '[Servant.API.ContentTypes.JSON]
+                                          [Types.GenericAST])
+                  Servant.Client.Internal.HttpClient.$fRunClientClientM
+                  (\ (eta :: Data.Proxy.Proxy
+                               Servant.Client.Internal.HttpClient.ClientM)
+                     (eta1 :: Data.Proxy.Proxy
+                                (Servant.API.ReqBody.ReqBody'
+                                   mods (Servant.API.ContentTypes.JSON : cts) Types.InputString
+                                 Servant.API.Sub.:> Servant.API.Verbs.Verb
+                                                      'Network.HTTP.Types.Method.POST
+                                                      200
+                                                      '[Servant.API.ContentTypes.JSON]
+                                                      [Types.GenericAST]))
+                     (eta2 :: Servant.Client.Core.Internal.Request.Request)
+                     (body :: Types.InputString) ->
+                   case eta1 of wild { Data.Proxy.Proxy ->
+                   Servant.Client.Core.Internal.HasClient.$fHasClientmVerb2_$cclientWithRoute
+                     @ Network.HTTP.Types.Method.StdMethod
+                     @ Servant.Client.Internal.HttpClient.ClientM
+                     @ Servant.API.ContentTypes.JSON
+                     @ [Types.GenericAST]
+                     @ 'Network.HTTP.Types.Method.POST
+                     @ '[Servant.API.ContentTypes.JSON]
+                     @ '[]
+                     @ 200
+                     Servant.Client.Internal.HttpClient.$fRunClientClientM
+                     Client.$s$fHasClientm:>25_$s$fMimeUnrenderTYPEJSONa
+                     Servant.API.Verbs.$fReflectMethodStdMethodPOST_$creflectMethod
+                       `cast`
+                     (Sym (Servant.API.Verbs.N:ReflectMethod[0]
+                               <Network.HTTP.Types.Method.StdMethod>_N
+                               <'Network.HTTP.Types.Method.POST>_N))
+                     Client.$s$fHasClientm:>4_$cclientWithRoute1
+                       `cast`
+                     (Sym (Data.Type.Equality.N:~[0]
+                               <[*]>_N) <'[Servant.API.ContentTypes.JSON]>_N <'[Servant.API.ContentTypes.JSON]>_N)
+                     eta
+                     (Data.Proxy.Proxy
+                        @ *
+                        @ (Servant.API.Verbs.Verb
+                             'Network.HTTP.Types.Method.POST
+                             200
+                             '[Servant.API.ContentTypes.JSON]
+                             [Types.GenericAST]))
+                     (case eta2 of wild1 { Servant.Client.Core.Internal.Request.Request ds ds1 ds2 ds3 ds4 ds5 ds6 ->
+                      Servant.Client.Core.Internal.Request.Request
+                        @ Data.ByteString.Builder.Internal.Builder
+                        ds
+                        ds1
+                        (GHC.Base.Just
+                           @ (Servant.Client.Core.Internal.Request.RequestBody,
+                              Network.HTTP.Media.MediaType.Internal.MediaType)
+                           (Servant.Client.Core.Internal.Request.RequestBodyLBS
+                              (Data.ByteString.Builder.toLazyByteString
+                                 (Data.Aeson.Encoding.Builder.encodeToBuilder
+                                    (Types.$fToJSONInputString1
+                                       body
+                                         `cast`
+                                       (Types.N:InputString[0] ; (Sym (GHC.Generics.N:K1[0]
+                                                                           <*>_N
+                                                                           <GHC.Generics.R>_P
+                                                                           <GHC.Base.String>_R
+                                                                           <GHC.Types.Any>_P) ; Sym (GHC.Generics.N:M1[0]
+                                                                                                         <*>_N
+                                                                                                         <GHC.Generics.S>_P
+                                                                                                         <'GHC.Generics.MetaSel
+                                                                                                            ('GHC.Base.Just
+                                                                                                               "inputStr")
+                                                                                                            'GHC.Generics.NoSourceUnpackedness
+                                                                                                            'GHC.Generics.NoSourceStrictness
+                                                                                                            'GHC.Generics.DecidedLazy>_P
+                                                                                                         <GHC.Generics.K1
+                                                                                                            GHC.Generics.R
+                                                                                                            GHC.Base.String>_R) <GHC.Types.Any>_N))))),
+                            Servant.API.ContentTypes.$fAcceptTYPEJSON4))
+                        ds3
+                        ds4
+                        ds5
+                        ds6 }) })
+                    `cast`
+                  (<Data.Proxy.Proxy Servant.Client.Internal.HttpClient.ClientM>_R
+                   ->_R <Data.Proxy.Proxy
+                           (Servant.API.ReqBody.ReqBody'
+                              mods (Servant.API.ContentTypes.JSON : cts) Types.InputString
+                            Servant.API.Sub.:> Servant.API.Verbs.Verb
+                                                 'Network.HTTP.Types.Method.POST
+                                                 200
+                                                 '[Servant.API.ContentTypes.JSON]
+                                                 [Types.GenericAST])>_R
+                   ->_R <Servant.Client.Core.Internal.Request.Request>_R
+                   ->_R Sub (Sym (Servant.Client.Core.Internal.HasClient.D:R:Clientm:>5[0]
+                                      <Servant.Client.Internal.HttpClient.ClientM>_N
+                                      <mods>_N
+                                      <Servant.API.ContentTypes.JSON>_N
+                                      <cts>_N
+                                      <Types.InputString>_N
+                                      <Servant.API.Verbs.Verb
+                                         'Network.HTTP.Types.Method.POST
+                                         200
+                                         '[Servant.API.ContentTypes.JSON]
+                                         [Types.GenericAST]>_N)))
+                  (\ @ mon :: * -> *
+                     @ mon' :: * -> *
+                     (pm :: Data.Proxy.Proxy Servant.Client.Internal.HttpClient.ClientM)
+                     (ds :: Data.Proxy.Proxy
+                              (Servant.API.ReqBody.ReqBody'
+                                 mods (Servant.API.ContentTypes.JSON : cts) Types.InputString
+                               Servant.API.Sub.:> Servant.API.Verbs.Verb
+                                                    'Network.HTTP.Types.Method.POST
+                                                    200
+                                                    '[Servant.API.ContentTypes.JSON]
+                                                    [Types.GenericAST]))
+                     (f :: forall x. mon x -> mon' x)
+                     (cl :: Servant.Client.Core.Internal.HasClient.Client
+                              mon
+                              (Servant.API.ReqBody.ReqBody'
+                                 mods (Servant.API.ContentTypes.JSON : cts) Types.InputString
+                               Servant.API.Sub.:> Servant.API.Verbs.Verb
+                                                    'Network.HTTP.Types.Method.POST
+                                                    200
+                                                    '[Servant.API.ContentTypes.JSON]
+                                                    [Types.GenericAST]))
+                     (a1 :: Types.InputString) ->
+                   f @ [Types.GenericAST]
+                     (cl
+                        `cast`
+                      (Sub (Servant.Client.Core.Internal.HasClient.D:R:Clientm:>5[0]
+                                <mon>_N
+                                <mods>_N
+                                <Servant.API.ContentTypes.JSON>_N
+                                <cts>_N
+                                <Types.InputString>_N
+                                <Servant.API.Verbs.Verb
+                                   'Network.HTTP.Types.Method.POST
+                                   200
+                                   '[Servant.API.ContentTypes.JSON]
+                                   [Types.GenericAST]>_N))
+                        a1)
+                       `cast`
+                     (Sub (Servant.Client.Core.Internal.HasClient.D:R:ClientmVerb2[0]
+                               <Network.HTTP.Types.Method.StdMethod>_N
+                               <mon>_N
+                               <'Network.HTTP.Types.Method.POST>_N
+                               <200>_N
+                               <'[Servant.API.ContentTypes.JSON]>_N
+                               <[Types.GenericAST]>_N)))
+                    `cast`
+                  (forall (mon :: <* -> *>_N) (mon' :: <* -> *>_N).
+                   <Data.Proxy.Proxy Servant.Client.Internal.HttpClient.ClientM>_R
+                   ->_R <Data.Proxy.Proxy
+                           (Servant.API.ReqBody.ReqBody'
+                              mods (Servant.API.ContentTypes.JSON : cts) Types.InputString
+                            Servant.API.Sub.:> Servant.API.Verbs.Verb
+                                                 'Network.HTTP.Types.Method.POST
+                                                 200
+                                                 '[Servant.API.ContentTypes.JSON]
+                                                 [Types.GenericAST])>_R
+                   ->_R <forall x. mon x -> mon' x>_R
+                   ->_R <Servant.Client.Core.Internal.HasClient.Client
+                           mon
+                           (Servant.API.ReqBody.ReqBody'
+                              mods (Servant.API.ContentTypes.JSON : cts) Types.InputString
+                            Servant.API.Sub.:> Servant.API.Verbs.Verb
+                                                 'Network.HTTP.Types.Method.POST
+                                                 200
+                                                 '[Servant.API.ContentTypes.JSON]
+                                                 [Types.GenericAST])>_R
+                   ->_R (<Types.InputString>_R
+                         ->_R Sub (Sym (Servant.Client.Core.Internal.HasClient.D:R:ClientmVerb2[0]
+                                            <Network.HTTP.Types.Method.StdMethod>_N
+                                            <mon'>_N
+                                            <'Network.HTTP.Types.Method.POST>_N
+                                            <200>_N
+                                            <'[Servant.API.ContentTypes.JSON]>_N
+                                            <[Types.GenericAST]>_N))) ; Sub (Sym (Servant.Client.Core.Internal.HasClient.D:R:Clientm:>5[0]
+                                                                                      <mon'>_N
+                                                                                      <mods>_N
+                                                                                      <Servant.API.ContentTypes.JSON>_N
+                                                                                      <cts>_N
+                                                                                      <Types.InputString>_N
+                                                                                      <Servant.API.Verbs.Verb
+                                                                                         'Network.HTTP.Types.Method.POST
+                                                                                         200
+                                                                                         '[Servant.API.ContentTypes.JSON]
+                                                                                         [Types.GenericAST]>_N))) -}
+f7344c2389ec1444065f8cfa8a79937d
+  $s$fHasClientm:>4_$cclientWithRoute_$s$fHasClientm:>5 ::
+    Servant.Client.Core.Internal.HasClient.HasClient
+      Servant.Client.Internal.HttpClient.ClientM
+      (Servant.API.ReqBody.ReqBody'
+         mods (Servant.API.ContentTypes.JSON : cts) Types.StepsWithKey
+       Servant.API.Sub.:> Servant.API.Verbs.Verb
+                            'Network.HTTP.Types.Method.POST
+                            200
+                            '[Servant.API.ContentTypes.JSON]
+                            Types.ResponseMsg)
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ mods :: [*] @ cts :: [*].
+                  @ Servant.Client.Internal.HttpClient.ClientM
+                  @ (Servant.API.ReqBody.ReqBody'
+                       mods (Servant.API.ContentTypes.JSON : cts) Types.StepsWithKey
+                     Servant.API.Sub.:> Servant.API.Verbs.Verb
+                                          'Network.HTTP.Types.Method.POST
+                                          200
+                                          '[Servant.API.ContentTypes.JSON]
+                                          Types.ResponseMsg)
+                  Servant.Client.Internal.HttpClient.$fRunClientClientM
+                  (\ (eta :: Data.Proxy.Proxy
+                               Servant.Client.Internal.HttpClient.ClientM)
+                     (eta1 :: Data.Proxy.Proxy
+                                (Servant.API.ReqBody.ReqBody'
+                                   mods (Servant.API.ContentTypes.JSON : cts) Types.StepsWithKey
+                                 Servant.API.Sub.:> Servant.API.Verbs.Verb
+                                                      'Network.HTTP.Types.Method.POST
+                                                      200
+                                                      '[Servant.API.ContentTypes.JSON]
+                                                      Types.ResponseMsg))
+                     (eta2 :: Servant.Client.Core.Internal.Request.Request)
+                     (body :: Types.StepsWithKey) ->
+                   case eta1 of wild { Data.Proxy.Proxy ->
+                   Servant.Client.Core.Internal.HasClient.$fHasClientmVerb2_$cclientWithRoute
+                     @ Network.HTTP.Types.Method.StdMethod
+                     @ Servant.Client.Internal.HttpClient.ClientM
+                     @ Servant.API.ContentTypes.JSON
+                     @ Types.ResponseMsg
+                     @ 'Network.HTTP.Types.Method.POST
+                     @ '[Servant.API.ContentTypes.JSON]
+                     @ '[]
+                     @ 200
+                     Servant.Client.Internal.HttpClient.$fRunClientClientM
+                     Client.$s$fHasClientm:>4_$cclientWithRoute_$s$fMimeUnrenderTYPEJSONa
+                     Servant.API.Verbs.$fReflectMethodStdMethodPOST_$creflectMethod
+                       `cast`
+                     (Sym (Servant.API.Verbs.N:ReflectMethod[0]
+                               <Network.HTTP.Types.Method.StdMethod>_N
+                               <'Network.HTTP.Types.Method.POST>_N))
+                     Client.$s$fHasClientm:>4_$cclientWithRoute1
+                       `cast`
+                     (Sym (Data.Type.Equality.N:~[0]
+                               <[*]>_N) <'[Servant.API.ContentTypes.JSON]>_N <'[Servant.API.ContentTypes.JSON]>_N)
+                     eta
+                     (Data.Proxy.Proxy
+                        @ *
+                        @ (Servant.API.Verbs.Verb
+                             'Network.HTTP.Types.Method.POST
+                             200
+                             '[Servant.API.ContentTypes.JSON]
+                             Types.ResponseMsg))
+                     (case eta2 of wild1 { Servant.Client.Core.Internal.Request.Request ds ds1 ds2 ds3 ds4 ds5 ds6 ->
+                      Servant.Client.Core.Internal.Request.Request
+                        @ Data.ByteString.Builder.Internal.Builder
+                        ds
+                        ds1
+                        (GHC.Base.Just
+                           @ (Servant.Client.Core.Internal.Request.RequestBody,
+                              Network.HTTP.Media.MediaType.Internal.MediaType)
+                           (Servant.Client.Core.Internal.Request.RequestBodyLBS
+                              (Data.ByteString.Builder.toLazyByteString
+                                 (case body of wild2 { Types.StepsWithKey g1 g2 ->
+                                  Data.Aeson.Encoding.Builder.encodeToBuilder
+                                    (Types.$fToJSONStepsWithKey1
+                                       @ GHC.Types.Any
+                                       Types.$fFromJSONInputString_opts
+                                       (Data.Aeson.Types.ToJSON.$WNoToArgs
+                                          @ Data.Aeson.Types.Internal.Value
+                                          @ GHC.Types.Any)
+                                       (GHC.Generics.:*:
+                                          @ *
+                                          @ (GHC.Generics.M1
+                                               GHC.Generics.S
+                                               ('GHC.Generics.MetaSel
+                                                  ('GHC.Base.Just "evalSteps")
+                                                  'GHC.Generics.NoSourceUnpackedness
+                                                  'GHC.Generics.NoSourceStrictness
+                                                  'GHC.Generics.DecidedLazy)
+                                               (GHC.Generics.K1 GHC.Generics.R [Types.GenericAST]))
+                                          @ (GHC.Generics.M1
+                                               GHC.Generics.S
+                                               ('GHC.Generics.MetaSel
+                                                  ('GHC.Base.Just "key")
+                                                  'GHC.Generics.NoSourceUnpackedness
+                                                  'GHC.Generics.NoSourceStrictness
+                                                  'GHC.Generics.DecidedLazy)
+                                               (GHC.Generics.K1 GHC.Generics.R GHC.Base.String))
+                                          @ GHC.Types.Any
+                                          g1
+                                            `cast`
+                                          (Sym (GHC.Generics.N:K1[0]
+                                                    <*>_N
+                                                    <GHC.Generics.R>_P
+                                                    <[Types.GenericAST]>_R
+                                                    <GHC.Types.Any>_P) ; Sym (GHC.Generics.N:M1[0]
+                                                                                  <*>_N
+                                                                                  <GHC.Generics.S>_P
+                                                                                  <'GHC.Generics.MetaSel
+                                                                                     ('GHC.Base.Just
+                                                                                        "evalSteps")
+                                                                                     'GHC.Generics.NoSourceUnpackedness
+                                                                                     'GHC.Generics.NoSourceStrictness
+                                                                                     'GHC.Generics.DecidedLazy>_P
+                                                                                  <GHC.Generics.K1
+                                                                                     GHC.Generics.R
+                                                                                     [Types.GenericAST]>_R) <GHC.Types.Any>_N)
+                                          g2
+                                            `cast`
+                                          (Sym (GHC.Generics.N:K1[0]
+                                                    <*>_N
+                                                    <GHC.Generics.R>_P
+                                                    <GHC.Base.String>_R
+                                                    <GHC.Types.Any>_P) ; Sym (GHC.Generics.N:M1[0]
+                                                                                  <*>_N
+                                                                                  <GHC.Generics.S>_P
+                                                                                  <'GHC.Generics.MetaSel
+                                                                                     ('GHC.Base.Just
+                                                                                        "key")
+                                                                                     'GHC.Generics.NoSourceUnpackedness
+                                                                                     'GHC.Generics.NoSourceStrictness
+                                                                                     'GHC.Generics.DecidedLazy>_P
+                                                                                  <GHC.Generics.K1
+                                                                                     GHC.Generics.R
+                                                                                     GHC.Base.String>_R) <GHC.Types.Any>_N))) })),
+                            Servant.API.ContentTypes.$fAcceptTYPEJSON4))
+                        ds3
+                        ds4
+                        ds5
+                        ds6 }) })
+                    `cast`
+                  (<Data.Proxy.Proxy Servant.Client.Internal.HttpClient.ClientM>_R
+                   ->_R <Data.Proxy.Proxy
+                           (Servant.API.ReqBody.ReqBody'
+                              mods (Servant.API.ContentTypes.JSON : cts) Types.StepsWithKey
+                            Servant.API.Sub.:> Servant.API.Verbs.Verb
+                                                 'Network.HTTP.Types.Method.POST
+                                                 200
+                                                 '[Servant.API.ContentTypes.JSON]
+                                                 Types.ResponseMsg)>_R
+                   ->_R <Servant.Client.Core.Internal.Request.Request>_R
+                   ->_R Sub (Sym (Servant.Client.Core.Internal.HasClient.D:R:Clientm:>5[0]
+                                      <Servant.Client.Internal.HttpClient.ClientM>_N
+                                      <mods>_N
+                                      <Servant.API.ContentTypes.JSON>_N
+                                      <cts>_N
+                                      <Types.StepsWithKey>_N
+                                      <Servant.API.Verbs.Verb
+                                         'Network.HTTP.Types.Method.POST
+                                         200
+                                         '[Servant.API.ContentTypes.JSON]
+                                         Types.ResponseMsg>_N)))
+                  (\ @ mon :: * -> *
+                     @ mon' :: * -> *
+                     (pm :: Data.Proxy.Proxy Servant.Client.Internal.HttpClient.ClientM)
+                     (ds :: Data.Proxy.Proxy
+                              (Servant.API.ReqBody.ReqBody'
+                                 mods (Servant.API.ContentTypes.JSON : cts) Types.StepsWithKey
+                               Servant.API.Sub.:> Servant.API.Verbs.Verb
+                                                    'Network.HTTP.Types.Method.POST
+                                                    200
+                                                    '[Servant.API.ContentTypes.JSON]
+                                                    Types.ResponseMsg))
+                     (f :: forall x. mon x -> mon' x)
+                     (cl :: Servant.Client.Core.Internal.HasClient.Client
+                              mon
+                              (Servant.API.ReqBody.ReqBody'
+                                 mods (Servant.API.ContentTypes.JSON : cts) Types.StepsWithKey
+                               Servant.API.Sub.:> Servant.API.Verbs.Verb
+                                                    'Network.HTTP.Types.Method.POST
+                                                    200
+                                                    '[Servant.API.ContentTypes.JSON]
+                                                    Types.ResponseMsg))
+                     (a1 :: Types.StepsWithKey) ->
+                   f @ Types.ResponseMsg
+                     (cl
+                        `cast`
+                      (Sub (Servant.Client.Core.Internal.HasClient.D:R:Clientm:>5[0]
+                                <mon>_N
+                                <mods>_N
+                                <Servant.API.ContentTypes.JSON>_N
+                                <cts>_N
+                                <Types.StepsWithKey>_N
+                                <Servant.API.Verbs.Verb
+                                   'Network.HTTP.Types.Method.POST
+                                   200
+                                   '[Servant.API.ContentTypes.JSON]
+                                   Types.ResponseMsg>_N))
+                        a1)
+                       `cast`
+                     (Sub (Servant.Client.Core.Internal.HasClient.D:R:ClientmVerb2[0]
+                               <Network.HTTP.Types.Method.StdMethod>_N
+                               <mon>_N
+                               <'Network.HTTP.Types.Method.POST>_N
+                               <200>_N
+                               <'[Servant.API.ContentTypes.JSON]>_N
+                               <Types.ResponseMsg>_N)))
+                    `cast`
+                  (forall (mon :: <* -> *>_N) (mon' :: <* -> *>_N).
+                   <Data.Proxy.Proxy Servant.Client.Internal.HttpClient.ClientM>_R
+                   ->_R <Data.Proxy.Proxy
+                           (Servant.API.ReqBody.ReqBody'
+                              mods (Servant.API.ContentTypes.JSON : cts) Types.StepsWithKey
+                            Servant.API.Sub.:> Servant.API.Verbs.Verb
+                                                 'Network.HTTP.Types.Method.POST
+                                                 200
+                                                 '[Servant.API.ContentTypes.JSON]
+                                                 Types.ResponseMsg)>_R
+                   ->_R <forall x. mon x -> mon' x>_R
+                   ->_R <Servant.Client.Core.Internal.HasClient.Client
+                           mon
+                           (Servant.API.ReqBody.ReqBody'
+                              mods (Servant.API.ContentTypes.JSON : cts) Types.StepsWithKey
+                            Servant.API.Sub.:> Servant.API.Verbs.Verb
+                                                 'Network.HTTP.Types.Method.POST
+                                                 200
+                                                 '[Servant.API.ContentTypes.JSON]
+                                                 Types.ResponseMsg)>_R
+                   ->_R (<Types.StepsWithKey>_R
+                         ->_R Sub (Sym (Servant.Client.Core.Internal.HasClient.D:R:ClientmVerb2[0]
+                                            <Network.HTTP.Types.Method.StdMethod>_N
+                                            <mon'>_N
+                                            <'Network.HTTP.Types.Method.POST>_N
+                                            <200>_N
+                                            <'[Servant.API.ContentTypes.JSON]>_N
+                                            <Types.ResponseMsg>_N))) ; Sub (Sym (Servant.Client.Core.Internal.HasClient.D:R:Clientm:>5[0]
+                                                                                     <mon'>_N
+                                                                                     <mods>_N
+                                                                                     <Servant.API.ContentTypes.JSON>_N
+                                                                                     <cts>_N
+                                                                                     <Types.StepsWithKey>_N
+                                                                                     <Servant.API.Verbs.Verb
+                                                                                        'Network.HTTP.Types.Method.POST
+                                                                                        200
+                                                                                        '[Servant.API.ContentTypes.JSON]
+                                                                                        Types.ResponseMsg>_N))) -}
+a986b022136bc9928197bbf0736c68f2
+  $s$fHasClientm:>4_$cclientWithRoute_$s$fHasClientm:>8 ::
+    Servant.Client.Core.Internal.HasClient.HasClient
+      Servant.Client.Internal.HttpClient.ClientM
+      (Servant.API.QueryParam.QueryParam'
+         '[Servant.API.Modifiers.Optional, Servant.API.Modifiers.Strict]
+         "studentKey"
+         [GHC.Types.Char]
+       Servant.API.Sub.:> Servant.API.Verbs.Verb
+                            'Network.HTTP.Types.Method.GET
+                            200
+                            '[Servant.API.ContentTypes.JSON]
+                            [Types.GenericAST])
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Servant.Client.Internal.HttpClient.ClientM
+                  @ (Servant.API.QueryParam.QueryParam'
+                       '[Servant.API.Modifiers.Optional, Servant.API.Modifiers.Strict]
+                       "studentKey"
+                       [GHC.Types.Char]
+                     Servant.API.Sub.:> Servant.API.Verbs.Verb
+                                          'Network.HTTP.Types.Method.GET
+                                          200
+                                          '[Servant.API.ContentTypes.JSON]
+                                          [Types.GenericAST])
+                  Servant.Client.Internal.HttpClient.$fRunClientClientM
+                  (Servant.Client.Core.Internal.HasClient.$fHasClientm:>25
+                     @ "studentKey"
+                     @ [GHC.Types.Char]
+                     @ Servant.Client.Internal.HttpClient.ClientM
+                     @ (Servant.API.Verbs.Verb
+                          'Network.HTTP.Types.Method.GET
+                          200
+                          '[Servant.API.ContentTypes.JSON]
+                          [Types.GenericAST])
+                     @ '[Servant.API.Modifiers.Optional, Servant.API.Modifiers.Strict]
+                     Client.$s$fHasClientm:>1
+                       `cast`
+                     (Sym (GHC.TypeLits.N:SSymbol[0]
+                               <"studentKey">_P) ; Sym (GHC.TypeLits.N:KnownSymbol[0]) <"studentKey">_N)
+                     Web.Internal.HttpApiData.$fToHttpApiData[]
+                     (Client.$s$fHasClientm:>4_$cclientWithRoute_$s$fHasClientmVerb2
+                        @ 200)
+                     Data.Singletons.Bool.$WSFalse
+                       `cast`
+                     (Sym (Data.Singletons.Bool.N:SBoolI[0]) (Sym (Servant.API.Modifiers.D:R:FoldRequired'[0]
+                                                                       <'GHC.Types.False>_N) ; (Sym (Servant.API.Modifiers.D:R:FoldRequired'[3]
+                                                                                                         <'GHC.Types.False>_N
+                                                                                                         <Servant.API.Modifiers.Strict>_N
+                                                                                                         <'[]>_N) ; Sym (Servant.API.Modifiers.D:R:FoldRequired'[2]
+                                                                                                                             <'GHC.Types.False>_N
+                                                                                                                             <'[Servant.API.Modifiers.Strict]>_N)))))
+                    `cast`
+                  (<Data.Proxy.Proxy Servant.Client.Internal.HttpClient.ClientM>_R
+                   ->_R <Data.Proxy.Proxy
+                           (Servant.API.QueryParam.QueryParam'
+                              '[Servant.API.Modifiers.Optional, Servant.API.Modifiers.Strict]
+                              "studentKey"
+                              [GHC.Types.Char]
+                            Servant.API.Sub.:> Servant.API.Verbs.Verb
+                                                 'Network.HTTP.Types.Method.GET
+                                                 200
+                                                 '[Servant.API.ContentTypes.JSON]
+                                                 [Types.GenericAST])>_R
+                   ->_R <Servant.Client.Core.Internal.Request.Request>_R
+                   ->_R Sub (Sym (Servant.Client.Core.Internal.HasClient.D:R:Clientm:>8[0]
+                                      <Servant.Client.Internal.HttpClient.ClientM>_N
+                                      <'[Servant.API.Modifiers.Optional,
+                                         Servant.API.Modifiers.Strict]>_N
+                                      <"studentKey">_N
+                                      <[GHC.Types.Char]>_N
+                                      <Servant.API.Verbs.Verb
+                                         'Network.HTTP.Types.Method.GET
+                                         200
+                                         '[Servant.API.ContentTypes.JSON]
+                                         [Types.GenericAST]>_N)))
+                  (\ @ mon :: * -> *
+                     @ mon' :: * -> *
+                     (pm :: Data.Proxy.Proxy Servant.Client.Internal.HttpClient.ClientM)
+                     (ds :: Data.Proxy.Proxy
+                              (Servant.API.QueryParam.QueryParam'
+                                 '[Servant.API.Modifiers.Optional, Servant.API.Modifiers.Strict]
+                                 "studentKey"
+                                 [GHC.Types.Char]
+                               Servant.API.Sub.:> Servant.API.Verbs.Verb
+                                                    'Network.HTTP.Types.Method.GET
+                                                    200
+                                                    '[Servant.API.ContentTypes.JSON]
+                                                    [Types.GenericAST]))
+                     (f :: forall x. mon x -> mon' x)
+                     (cl :: Servant.Client.Core.Internal.HasClient.Client
+                              mon
+                              (Servant.API.QueryParam.QueryParam'
+                                 '[Servant.API.Modifiers.Optional, Servant.API.Modifiers.Strict]
+                                 "studentKey"
+                                 [GHC.Types.Char]
+                               Servant.API.Sub.:> Servant.API.Verbs.Verb
+                                                    'Network.HTTP.Types.Method.GET
+                                                    200
+                                                    '[Servant.API.ContentTypes.JSON]
+                                                    [Types.GenericAST]))
+                     (arg :: Data.Type.Bool.If
+                               (Servant.API.Modifiers.FoldRequired'
+                                  'GHC.Types.False
+                                  '[Servant.API.Modifiers.Optional, Servant.API.Modifiers.Strict])
+                               [GHC.Types.Char]
+                               (GHC.Base.Maybe [GHC.Types.Char])) ->
+                   f @ [Types.GenericAST]
+                     (cl
+                        `cast`
+                      (Sub (Servant.Client.Core.Internal.HasClient.D:R:Clientm:>8[0]
+                                <mon>_N
+                                <'[Servant.API.Modifiers.Optional, Servant.API.Modifiers.Strict]>_N
+                                <"studentKey">_N
+                                <[GHC.Types.Char]>_N
+                                <Servant.API.Verbs.Verb
+                                   'Network.HTTP.Types.Method.GET
+                                   200
+                                   '[Servant.API.ContentTypes.JSON]
+                                   [Types.GenericAST]>_N))
+                        arg)
+                       `cast`
+                     (Sub (Servant.Client.Core.Internal.HasClient.D:R:ClientmVerb2[0]
+                               <Network.HTTP.Types.Method.StdMethod>_N
+                               <mon>_N
+                               <'Network.HTTP.Types.Method.GET>_N
+                               <200>_N
+                               <'[Servant.API.ContentTypes.JSON]>_N
+                               <[Types.GenericAST]>_N)))
+                    `cast`
+                  (forall (mon :: <* -> *>_N) (mon' :: <* -> *>_N).
+                   <Data.Proxy.Proxy Servant.Client.Internal.HttpClient.ClientM>_R
+                   ->_R <Data.Proxy.Proxy
+                           (Servant.API.QueryParam.QueryParam'
+                              '[Servant.API.Modifiers.Optional, Servant.API.Modifiers.Strict]
+                              "studentKey"
+                              [GHC.Types.Char]
+                            Servant.API.Sub.:> Servant.API.Verbs.Verb
+                                                 'Network.HTTP.Types.Method.GET
+                                                 200
+                                                 '[Servant.API.ContentTypes.JSON]
+                                                 [Types.GenericAST])>_R
+                   ->_R <forall x. mon x -> mon' x>_R
+                   ->_R <Servant.Client.Core.Internal.HasClient.Client
+                           mon
+                           (Servant.API.QueryParam.QueryParam'
+                              '[Servant.API.Modifiers.Optional, Servant.API.Modifiers.Strict]
+                              "studentKey"
+                              [GHC.Types.Char]
+                            Servant.API.Sub.:> Servant.API.Verbs.Verb
+                                                 'Network.HTTP.Types.Method.GET
+                                                 200
+                                                 '[Servant.API.ContentTypes.JSON]
+                                                 [Types.GenericAST])>_R
+                   ->_R (<Data.Type.Bool.If
+                            (Servant.API.Modifiers.FoldRequired'
+                               'GHC.Types.False
+                               '[Servant.API.Modifiers.Optional, Servant.API.Modifiers.Strict])
+                            [GHC.Types.Char]
+                            (GHC.Base.Maybe [GHC.Types.Char])>_R
+                         ->_R Sub (Sym (Servant.Client.Core.Internal.HasClient.D:R:ClientmVerb2[0]
+                                            <Network.HTTP.Types.Method.StdMethod>_N
+                                            <mon'>_N
+                                            <'Network.HTTP.Types.Method.GET>_N
+                                            <200>_N
+                                            <'[Servant.API.ContentTypes.JSON]>_N
+                                            <[Types.GenericAST]>_N))) ; Sub (Sym (Servant.Client.Core.Internal.HasClient.D:R:Clientm:>8[0]
+                                                                                      <mon'>_N
+                                                                                      <'[Servant.API.Modifiers.Optional,
+                                                                                         Servant.API.Modifiers.Strict]>_N
+                                                                                      <"studentKey">_N
+                                                                                      <[GHC.Types.Char]>_N
+                                                                                      <Servant.API.Verbs.Verb
+                                                                                         'Network.HTTP.Types.Method.GET
+                                                                                         200
+                                                                                         '[Servant.API.ContentTypes.JSON]
+                                                                                         [Types.GenericAST]>_N))) -}
+efc770a6fd9ec3c54d2257c07140ea66
+  $s$fHasClientm:>4_$cclientWithRoute_$s$fHasClientmVerb2 ::
+    Servant.Client.Core.Internal.HasClient.HasClient
+      Servant.Client.Internal.HttpClient.ClientM
+      (Servant.API.Verbs.Verb
+         'Network.HTTP.Types.Method.GET
+         status
+         '[Servant.API.ContentTypes.JSON]
+         [Types.GenericAST])
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ status :: GHC.Types.Nat.
+                  @ Servant.Client.Internal.HttpClient.ClientM
+                  @ (Servant.API.Verbs.Verb
+                       'Network.HTTP.Types.Method.GET
+                       status
+                       '[Servant.API.ContentTypes.JSON]
+                       [Types.GenericAST])
+                  Servant.Client.Internal.HttpClient.$fRunClientClientM
+                  (Servant.Client.Core.Internal.HasClient.$fHasClientmVerb2_$cclientWithRoute
+                     @ Network.HTTP.Types.Method.StdMethod
+                     @ Servant.Client.Internal.HttpClient.ClientM
+                     @ Servant.API.ContentTypes.JSON
+                     @ [Types.GenericAST]
+                     @ 'Network.HTTP.Types.Method.GET
+                     @ '[Servant.API.ContentTypes.JSON]
+                     @ '[]
+                     @ status
+                     Servant.Client.Internal.HttpClient.$fRunClientClientM
+                     Client.$s$fHasClientm:>25_$s$fMimeUnrenderTYPEJSONa
+                     Servant.API.Verbs.$fReflectMethodStdMethodGET_$creflectMethod
+                       `cast`
+                     (Sym (Servant.API.Verbs.N:ReflectMethod[0]
+                               <Network.HTTP.Types.Method.StdMethod>_N
+                               <'Network.HTTP.Types.Method.GET>_N))
+                     Client.$s$fHasClientm:>4_$cclientWithRoute1
+                       `cast`
+                     (Sym (Data.Type.Equality.N:~[0]
+                               <[*]>_N) <'[Servant.API.ContentTypes.JSON]>_N <'[Servant.API.ContentTypes.JSON]>_N))
+                  (\ @ mon :: * -> *
+                     @ mon' :: * -> *
+                     (ds :: Data.Proxy.Proxy Servant.Client.Internal.HttpClient.ClientM)
+                     (ds1 :: Data.Proxy.Proxy
+                               (Servant.API.Verbs.Verb
+                                  'Network.HTTP.Types.Method.GET
+                                  status
+                                  '[Servant.API.ContentTypes.JSON]
+                                  [Types.GenericAST]))
+                     (f :: forall x. mon x -> mon' x)
+                     (ma :: Servant.Client.Core.Internal.HasClient.Client
+                              mon
+                              (Servant.API.Verbs.Verb
+                                 'Network.HTTP.Types.Method.GET
+                                 status
+                                 '[Servant.API.ContentTypes.JSON]
+                                 [Types.GenericAST])) ->
+                   f @ [Types.GenericAST]
+                     ma
+                       `cast`
+                     (Sub (Servant.Client.Core.Internal.HasClient.D:R:ClientmVerb2[0]
+                               <Network.HTTP.Types.Method.StdMethod>_N
+                               <mon>_N
+                               <'Network.HTTP.Types.Method.GET>_N
+                               <status>_N
+                               <'[Servant.API.ContentTypes.JSON]>_N
+                               <[Types.GenericAST]>_N)))
+                    `cast`
+                  (forall (mon :: <* -> *>_N) (mon' :: <* -> *>_N).
+                   <Data.Proxy.Proxy Servant.Client.Internal.HttpClient.ClientM>_R
+                   ->_R <Data.Proxy.Proxy
+                           (Servant.API.Verbs.Verb
+                              'Network.HTTP.Types.Method.GET
+                              status
+                              '[Servant.API.ContentTypes.JSON]
+                              [Types.GenericAST])>_R
+                   ->_R <forall x. mon x -> mon' x>_R
+                   ->_R <Servant.Client.Core.Internal.HasClient.Client
+                           mon
+                           (Servant.API.Verbs.Verb
+                              'Network.HTTP.Types.Method.GET
+                              status
+                              '[Servant.API.ContentTypes.JSON]
+                              [Types.GenericAST])>_R
+                   ->_R Sub (Sym (Servant.Client.Core.Internal.HasClient.D:R:ClientmVerb2[0]
+                                      <Network.HTTP.Types.Method.StdMethod>_N
+                                      <mon'>_N
+                                      <'Network.HTTP.Types.Method.GET>_N
+                                      <status>_N
+                                      <'[Servant.API.ContentTypes.JSON]>_N
+                                      <[Types.GenericAST]>_N))) -}
+c8b10a39b180d7abb8baadee2389222b
+  $s$fHasClientm:>4_$cclientWithRoute_$s$fMimeUnrenderTYPEJSONa ::
+    Servant.API.ContentTypes.MimeUnrender
+      Servant.API.ContentTypes.JSON Types.ResponseMsg
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ *
+                  @ Servant.API.ContentTypes.JSON
+                  @ Types.ResponseMsg
+                  Servant.API.ContentTypes.$fAcceptTYPEJSON
+                  (\ (ds :: Data.Proxy.Proxy Servant.API.ContentTypes.JSON) ->
+                   Servant.API.ContentTypes.eitherDecodeLenient
+                     @ Types.ResponseMsg
+                     Types.$fFromJSONResponseMsg)
+                  (\ (p :: Data.Proxy.Proxy Servant.API.ContentTypes.JSON)
+                     (ds :: Network.HTTP.Media.MediaType.Internal.MediaType)
+                     (eta :: Data.ByteString.Lazy.Internal.ByteString) ->
+                   Servant.API.ContentTypes.eitherDecodeLenient
+                     @ Types.ResponseMsg
+                     Types.$fFromJSONResponseMsg
+                     eta) -}
+08c188b4191c81daaf63f467b74e5b88
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Client.$trModule3
+                   Client.$trModule1) -}
+f6a949aab0135224e4a76685c85f7f34
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Client.$trModule2) -}
+d2a2b6b1281f3b8a5150d7e19095080b
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Client"#) -}
+2dea3b82ea337f7826b7e48b1114ad82
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Client.$trModule4) -}
+703f2d22d98838f4dbf18c19cc1f98bc
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Oblig2-INF122-0.1.0.0-8cpJ2QxhiFI3jrCtHwoMCS"#) -}
+167a2e12d93a24f577cb48b4ba9eefac
+  type API =
+    ("steps"
+     Servant.API.Sub.:> (Servant.API.ReqBody.ReqBody
+                           '[Servant.API.ContentTypes.JSON] Types.InputString
+                         Servant.API.Sub.:> Servant.API.Verbs.Post
+                                              '[Servant.API.ContentTypes.JSON] [Types.GenericAST]))
+    Servant.API.Alternative.:<|> (("putStepsFromStudent"
+                                   Servant.API.Sub.:> (Servant.API.ReqBody.ReqBody
+                                                         '[Servant.API.ContentTypes.JSON]
+                                                         Types.StepsWithKey
+                                                       Servant.API.Sub.:> Servant.API.Verbs.Post
+                                                                            '[Servant.API.ContentTypes.JSON]
+                                                                            Types.ResponseMsg))
+                                  Servant.API.Alternative.:<|> ("getStepsFromStudent"
+                                                                Servant.API.Sub.:> (Servant.API.QueryParam.QueryParam
+                                                                                      "studentKey"
+                                                                                      GHC.Base.String
+                                                                                    Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                                                         '[Servant.API.ContentTypes.JSON]
+                                                                                                         [Types.GenericAST])))
+bc8af131c90e714c6b289347cabe5af2
+  api :: Data.Proxy.Proxy Client.API
+  {- HasNoCafRefs,
+     Unfolding: InlineRule (0, True, True)
+                (Data.Proxy.Proxy @ * @ Client.API) -}
+2e5f556691a1818512ddbe9fca5a30d9
+  getStepsFromStudent ::
+    GHC.Base.Maybe [GHC.Types.Char]
+    -> Servant.Client.Internal.HttpClient.ClientM [Types.GenericAST]
+  {- Unfolding: InlineRule (0, True, True)
+                Client.getStepsFromStudent1
+                  `cast`
+                (Sub (Servant.Client.Core.Internal.HasClient.D:R:Clientm:>8[0]
+                          <Servant.Client.Internal.HttpClient.ClientM>_N
+                          <'[Servant.API.Modifiers.Optional, Servant.API.Modifiers.Strict]>_N
+                          <"studentKey">_N
+                          <[GHC.Types.Char]>_N
+                          <Servant.API.Verbs.Verb
+                             'Network.HTTP.Types.Method.GET
+                             200
+                             '[Servant.API.ContentTypes.JSON]
+                             [Types.GenericAST]>_N) ; (((Data.Type.Bool.If
+                                                           <*>_N
+                                                           (Servant.API.Modifiers.D:R:FoldRequired'[2]
+                                                                <'GHC.Types.False>_N
+                                                                <'[Servant.API.Modifiers.Strict]>_N ; (Servant.API.Modifiers.D:R:FoldRequired'[3]
+                                                                                                           <'GHC.Types.False>_N
+                                                                                                           <Servant.API.Modifiers.Strict>_N
+                                                                                                           <'[]>_N ; Servant.API.Modifiers.D:R:FoldRequired'[0]
+                                                                                                                         <'GHC.Types.False>_N))
+                                                           <[GHC.Types.Char]>_N
+                                                           <GHC.Base.Maybe
+                                                              [GHC.Types.Char]>_N)_R ; Sub (Data.Type.Bool.D:R:If[1]
+                                                                                                <*>_N
+                                                                                                <[GHC.Types.Char]>_N
+                                                                                                <GHC.Base.Maybe
+                                                                                                   [GHC.Types.Char]>_N))
+                                                       ->_R Sub (Servant.Client.Core.Internal.HasClient.D:R:ClientmVerb2[0]
+                                                                     <Network.HTTP.Types.Method.StdMethod>_N
+                                                                     <Servant.Client.Internal.HttpClient.ClientM>_N
+                                                                     <'Network.HTTP.Types.Method.GET>_N
+                                                                     <200>_N
+                                                                     <'[Servant.API.ContentTypes.JSON]>_N
+                                                                     <[Types.GenericAST]>_N))) -}
+e98e83e67947949dc4fd2371e61de843
+  getStepsFromStudent1 ::
+    Servant.Client.Core.Internal.HasClient.Client
+      Servant.Client.Internal.HttpClient.ClientM
+      (Servant.API.QueryParam.QueryParam "studentKey" GHC.Base.String
+       Servant.API.Sub.:> Servant.API.Verbs.Get
+                            '[Servant.API.ContentTypes.JSON] [Types.GenericAST])
+  {- Unfolding: (Servant.Client.Core.Internal.HasClient.$w$cclientWithRoute3
+                   @ "getStepsFromStudent"
+                   @ Servant.Client.Internal.HttpClient.ClientM
+                   @ (Servant.API.QueryParam.QueryParam "studentKey" GHC.Base.String
+                      Servant.API.Sub.:> Servant.API.Verbs.Get
+                                           '[Servant.API.ContentTypes.JSON] [Types.GenericAST])
+                   Client.$s$fHasClientm:>4_$cclientWithRoute8
+                     `cast`
+                   (Sym (GHC.TypeLits.N:SSymbol[0]
+                             <"getStepsFromStudent">_P) ; Sym (GHC.TypeLits.N:KnownSymbol[0]) <"getStepsFromStudent">_N)
+                   Client.$s$fHasClientm:>4_$cclientWithRoute_$s$fHasClientm:>8
+                   (Data.Proxy.Proxy
+                      @ (* -> *)
+                      @ Servant.Client.Internal.HttpClient.ClientM)
+                   (Data.Proxy.Proxy
+                      @ *
+                      @ ("getStepsFromStudent"
+                         Servant.API.Sub.:> (Servant.API.QueryParam.QueryParam
+                                               "studentKey" GHC.Base.String
+                                             Servant.API.Sub.:> Servant.API.Verbs.Get
+                                                                  '[Servant.API.ContentTypes.JSON]
+                                                                  [Types.GenericAST])))
+                   Servant.Client.Core.Internal.Request.defaultRequest) -}
+edad14d220bdd76889709431d618c593
+  putStepsFromStudent ::
+    Types.StepsWithKey
+    -> Servant.Client.Internal.HttpClient.ClientM Types.ResponseMsg
+  {- Unfolding: InlineRule (0, True, True)
+                Client.putStepsFromStudent1
+                  `cast`
+                (Sub (Servant.Client.Core.Internal.HasClient.D:R:Clientm:>5[0]
+                          <Servant.Client.Internal.HttpClient.ClientM>_N
+                          <'[Servant.API.Modifiers.Required, Servant.API.Modifiers.Strict]>_N
+                          <Servant.API.ContentTypes.JSON>_N
+                          <'[]>_N
+                          <Types.StepsWithKey>_N
+                          <Servant.API.Verbs.Verb
+                             'Network.HTTP.Types.Method.POST
+                             200
+                             '[Servant.API.ContentTypes.JSON]
+                             Types.ResponseMsg>_N) ; (<Types.StepsWithKey>_R
+                                                      ->_R Sub (Servant.Client.Core.Internal.HasClient.D:R:ClientmVerb2[0]
+                                                                    <Network.HTTP.Types.Method.StdMethod>_N
+                                                                    <Servant.Client.Internal.HttpClient.ClientM>_N
+                                                                    <'Network.HTTP.Types.Method.POST>_N
+                                                                    <200>_N
+                                                                    <'[Servant.API.ContentTypes.JSON]>_N
+                                                                    <Types.ResponseMsg>_N))) -}
+da6765a036ffa8ef33c6f3c15f07793a
+  putStepsFromStudent1 ::
+    Servant.Client.Core.Internal.HasClient.Client
+      Servant.Client.Internal.HttpClient.ClientM
+      (Servant.API.ReqBody.ReqBody
+         '[Servant.API.ContentTypes.JSON] Types.StepsWithKey
+       Servant.API.Sub.:> Servant.API.Verbs.Post
+                            '[Servant.API.ContentTypes.JSON] Types.ResponseMsg)
+  {- Unfolding: (Servant.Client.Core.Internal.HasClient.$w$cclientWithRoute3
+                   @ "putStepsFromStudent"
+                   @ Servant.Client.Internal.HttpClient.ClientM
+                   @ (Servant.API.ReqBody.ReqBody
+                        '[Servant.API.ContentTypes.JSON] Types.StepsWithKey
+                      Servant.API.Sub.:> Servant.API.Verbs.Post
+                                           '[Servant.API.ContentTypes.JSON] Types.ResponseMsg)
+                   Client.$s$fHasClientm:>4_$cclientWithRoute2
+                     `cast`
+                   (Sym (GHC.TypeLits.N:SSymbol[0]
+                             <"putStepsFromStudent">_P) ; Sym (GHC.TypeLits.N:KnownSymbol[0]) <"putStepsFromStudent">_N)
+                   (Client.$s$fHasClientm:>4_$cclientWithRoute_$s$fHasClientm:>5
+                      @ '[Servant.API.Modifiers.Required, Servant.API.Modifiers.Strict]
+                      @ '[])
+                   (Data.Proxy.Proxy
+                      @ (* -> *)
+                      @ Servant.Client.Internal.HttpClient.ClientM)
+                   (Data.Proxy.Proxy
+                      @ *
+                      @ ("putStepsFromStudent"
+                         Servant.API.Sub.:> (Servant.API.ReqBody.ReqBody
+                                               '[Servant.API.ContentTypes.JSON] Types.StepsWithKey
+                                             Servant.API.Sub.:> Servant.API.Verbs.Post
+                                                                  '[Servant.API.ContentTypes.JSON]
+                                                                  Types.ResponseMsg)))
+                   Servant.Client.Core.Internal.Request.defaultRequest) -}
+d80377642a7b0a63b90cebdaf49f061d
+  query ::
+    GHC.Base.String
+    -> [Types.Expr]
+    -> Servant.Client.Internal.HttpClient.ClientM Types.ResponseMsg
+  {- Arity: 2, Strictness: <L,U><L,1*U>,
+     Unfolding: (\ (key :: GHC.Base.String) (steps2 :: [Types.Expr]) ->
+                 let {
+                   m1 :: Servant.Client.Internal.HttpClient.ClientM Types.ResponseMsg
+                   = Client.putStepsFromStudent1
+                       `cast`
+                     (Sub (Servant.Client.Core.Internal.HasClient.D:R:Clientm:>5[0]
+                               <Servant.Client.Internal.HttpClient.ClientM>_N
+                               <'[Servant.API.Modifiers.Required, Servant.API.Modifiers.Strict]>_N
+                               <Servant.API.ContentTypes.JSON>_N
+                               <'[]>_N
+                               <Types.StepsWithKey>_N
+                               <Servant.API.Verbs.Verb
+                                  'Network.HTTP.Types.Method.POST
+                                  200
+                                  '[Servant.API.ContentTypes.JSON]
+                                  Types.ResponseMsg>_N) ; (<Types.StepsWithKey>_R
+                                                           ->_R Sub (Servant.Client.Core.Internal.HasClient.D:R:ClientmVerb2[0]
+                                                                         <Network.HTTP.Types.Method.StdMethod>_N
+                                                                         <Servant.Client.Internal.HttpClient.ClientM>_N
+                                                                         <'Network.HTTP.Types.Method.POST>_N
+                                                                         <200>_N
+                                                                         <'[Servant.API.ContentTypes.JSON]>_N
+                                                                         <Types.ResponseMsg>_N)))
+                       (Types.StepsWithKey
+                          (GHC.Base.map
+                             @ Types.Expr
+                             @ Types.GenericAST
+                             Convert.toGeneric
+                             steps2)
+                          key)
+                 } in
+                 (\ (r1 :: Servant.Client.Internal.HttpClient.ClientEnv)
+                    (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                  case (m1
+                          `cast`
+                        (Servant.Client.Internal.HttpClient.N:ClientM[0] <Types.ResponseMsg>_N ; Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                                                     <*>_N
+                                                                                                     <Servant.Client.Internal.HttpClient.ClientEnv>_R
+                                                                                                     <Control.Monad.Trans.Except.ExceptT
+                                                                                                        Servant.Client.Core.Internal.Request.ServantError
+                                                                                                        GHC.Types.IO>_R
+                                                                                                     <Types.ResponseMsg>_N)
+                          r1)
+                         `cast`
+                       (Control.Monad.Trans.Except.N:ExceptT[0]
+                            <Servant.Client.Core.Internal.Request.ServantError>_N
+                            <GHC.Types.IO>_R
+                            <Types.ResponseMsg>_N ; GHC.Types.N:IO[0]
+                                                        <Data.Either.Either
+                                                           Servant.Client.Core.Internal.Request.ServantError
+                                                           Types.ResponseMsg>_R)
+                         s of ds1 { (#,#) ipv ipv1 ->
+                  case ipv1 of wild {
+                    Data.Either.Left e1 -> ds1
+                    Data.Either.Right x
+                    -> Servant.Client.Internal.HttpClient.$fApplicativeClientM2
+                         @ Types.ResponseMsg
+                         x
+                         r1
+                         ipv } })
+                   `cast`
+                 ((<Servant.Client.Internal.HttpClient.ClientEnv>_R
+                   ->_R Sym (GHC.Types.N:IO[0]
+                                 <Data.Either.Either
+                                    Servant.Client.Core.Internal.Request.ServantError
+                                    Types.ResponseMsg>_R) ; Sym (Control.Monad.Trans.Except.N:ExceptT[0]
+                                                                     <Servant.Client.Core.Internal.Request.ServantError>_N
+                                                                     <GHC.Types.IO>_R
+                                                                     <Types.ResponseMsg>_N)) ; (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                                                         <*>_N
+                                                                                                         <Servant.Client.Internal.HttpClient.ClientEnv>_R
+                                                                                                         <Control.Monad.Trans.Except.ExceptT
+                                                                                                            Servant.Client.Core.Internal.Request.ServantError
+                                                                                                            GHC.Types.IO>_R
+                                                                                                         <Types.ResponseMsg>_N) ; Sym (Servant.Client.Internal.HttpClient.N:ClientM[0]) <Types.ResponseMsg>_N))) -}
+fbf21fd8b7853321c8f06f4ae6d3c8fc
+  run :: GHC.Base.String -> [Types.Expr] -> GHC.Types.IO ()
+  {- Arity: 3, Strictness: <L,U><L,1*U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Client.run1
+                  `cast`
+                (<GHC.Base.String>_R
+                 ->_R <[Types.Expr]>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+ba4e3fad16b7766c41e23274c9cd4be5
+  run1 ::
+    GHC.Base.String
+    -> [Types.Expr]
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, Strictness: <L,U><L,1*U><S,U>,
+     Unfolding: (\ (key :: GHC.Base.String)
+                   (steps2 :: [Types.Expr])
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case Network.HTTP.Client.Manager.newManager1
+                        Network.HTTP.Client.Manager.defaultManagerSettings
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case ((Client.putStepsFromStudent1
+                          `cast`
+                        (Sub (Servant.Client.Core.Internal.HasClient.D:R:Clientm:>5[0]
+                                  <Servant.Client.Internal.HttpClient.ClientM>_N
+                                  <'[Servant.API.Modifiers.Required,
+                                     Servant.API.Modifiers.Strict]>_N
+                                  <Servant.API.ContentTypes.JSON>_N
+                                  <'[]>_N
+                                  <Types.StepsWithKey>_N
+                                  <Servant.API.Verbs.Verb
+                                     'Network.HTTP.Types.Method.POST
+                                     200
+                                     '[Servant.API.ContentTypes.JSON]
+                                     Types.ResponseMsg>_N) ; (<Types.StepsWithKey>_R
+                                                              ->_R Sub (Servant.Client.Core.Internal.HasClient.D:R:ClientmVerb2[0]
+                                                                            <Network.HTTP.Types.Method.StdMethod>_N
+                                                                            <Servant.Client.Internal.HttpClient.ClientM>_N
+                                                                            <'Network.HTTP.Types.Method.POST>_N
+                                                                            <200>_N
+                                                                            <'[Servant.API.ContentTypes.JSON]>_N
+                                                                            <Types.ResponseMsg>_N)))
+                          (Types.StepsWithKey
+                             (GHC.Base.map
+                                @ Types.Expr
+                                @ Types.GenericAST
+                                Convert.toGeneric
+                                steps2)
+                             key))
+                         `cast`
+                       (Servant.Client.Internal.HttpClient.N:ClientM[0] <Types.ResponseMsg>_N ; Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                                                    <*>_N
+                                                                                                    <Servant.Client.Internal.HttpClient.ClientEnv>_R
+                                                                                                    <Control.Monad.Trans.Except.ExceptT
+                                                                                                       Servant.Client.Core.Internal.Request.ServantError
+                                                                                                       GHC.Types.IO>_R
+                                                                                                    <Types.ResponseMsg>_N)
+                         (Servant.Client.Internal.HttpClient.ClientEnv
+                            ipv1
+                            Client.run6
+                            (GHC.Base.Nothing
+                               @ (GHC.Conc.Sync.TVar Network.HTTP.Client.Types.CookieJar))))
+                        `cast`
+                      (Control.Monad.Trans.Except.N:ExceptT[0]
+                           <Servant.Client.Core.Internal.Request.ServantError>_N
+                           <GHC.Types.IO>_R
+                           <Types.ResponseMsg>_N ; GHC.Types.N:IO[0]
+                                                       <Data.Either.Either
+                                                          Servant.Client.Core.Internal.Request.ServantError
+                                                          Types.ResponseMsg>_R)
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case ipv3 of wild {
+                   Data.Either.Left e1
+                   -> GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Client.run4
+                        GHC.Types.True
+                        ipv2
+                   Data.Either.Right x
+                   -> GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Client.run2
+                        GHC.Types.True
+                        ipv2 } } }) -}
+d57e295cf5279e2a6d14e593d7978dd9
+  run2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Client.run3) -}
+2c6cc56581699885313868bd35374c2d
+  run3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Stored steps successfully on server."#) -}
+882f657afd99c0514ba784e68184dcd9
+  run4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Client.run5) -}
+c5cd07834945f6e933a46ddc5610e07b
+  run5 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Oops, noe gikk galt... Send en mail til ragnhild.aalvik@gmail.com hvor du beskriver feilen."#) -}
+6caa5bebbfb24a5fba179595f90869ac
+  run6 :: Servant.Client.Core.Internal.BaseUrl.BaseUrl
+  {- Strictness: m,
+     Unfolding: (Servant.Client.Core.Internal.BaseUrl.BaseUrl
+                   Servant.Client.Core.Internal.BaseUrl.Http
+                   Client.run8
+                   Client.run7
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+59cf9e8d19c0478bf9a38bacd900cf11
+  run7 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 80#) -}
+85055de2aa9dfdbc3cf512c781d13dbd
+  run8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Client.run9) -}
+3b40f77ed671c67ddc524ef3788728f5
+  run9 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("visast-api-prod.herokuapp.com"#) -}
+24d73bd7f79569fb37d128625481b4a3
+  steps ::
+    Types.InputString
+    -> Servant.Client.Internal.HttpClient.ClientM [Types.GenericAST]
+  {- Unfolding: InlineRule (0, True, True)
+                Client.steps1
+                  `cast`
+                (Sub (Servant.Client.Core.Internal.HasClient.D:R:Clientm:>5[0]
+                          <Servant.Client.Internal.HttpClient.ClientM>_N
+                          <'[Servant.API.Modifiers.Required, Servant.API.Modifiers.Strict]>_N
+                          <Servant.API.ContentTypes.JSON>_N
+                          <'[]>_N
+                          <Types.InputString>_N
+                          <Servant.API.Verbs.Verb
+                             'Network.HTTP.Types.Method.POST
+                             200
+                             '[Servant.API.ContentTypes.JSON]
+                             [Types.GenericAST]>_N) ; (<Types.InputString>_R
+                                                       ->_R Sub (Servant.Client.Core.Internal.HasClient.D:R:ClientmVerb2[0]
+                                                                     <Network.HTTP.Types.Method.StdMethod>_N
+                                                                     <Servant.Client.Internal.HttpClient.ClientM>_N
+                                                                     <'Network.HTTP.Types.Method.POST>_N
+                                                                     <200>_N
+                                                                     <'[Servant.API.ContentTypes.JSON]>_N
+                                                                     <[Types.GenericAST]>_N))) -}
+b2afb3403b3d1166558aeb1d2fc24096
+  steps1 ::
+    Servant.Client.Core.Internal.HasClient.Client
+      Servant.Client.Internal.HttpClient.ClientM
+      (Servant.API.ReqBody.ReqBody
+         '[Servant.API.ContentTypes.JSON] Types.InputString
+       Servant.API.Sub.:> Servant.API.Verbs.Post
+                            '[Servant.API.ContentTypes.JSON] [Types.GenericAST])
+  {- Unfolding: (Servant.Client.Core.Internal.HasClient.$w$cclientWithRoute3
+                   @ "steps"
+                   @ Servant.Client.Internal.HttpClient.ClientM
+                   @ (Servant.API.ReqBody.ReqBody
+                        '[Servant.API.ContentTypes.JSON] Types.InputString
+                      Servant.API.Sub.:> Servant.API.Verbs.Post
+                                           '[Servant.API.ContentTypes.JSON] [Types.GenericAST])
+                   Client.$s$fHasClientm:>4_$cclientWithRoute5
+                     `cast`
+                   (Sym (GHC.TypeLits.N:SSymbol[0]
+                             <"steps">_P) ; Sym (GHC.TypeLits.N:KnownSymbol[0]) <"steps">_N)
+                   (Client.$s$fHasClientm:>4_$cclientWithRoute_$s$fHasClientm:>1
+                      @ '[Servant.API.Modifiers.Required, Servant.API.Modifiers.Strict]
+                      @ '[])
+                   (Data.Proxy.Proxy
+                      @ (* -> *)
+                      @ Servant.Client.Internal.HttpClient.ClientM)
+                   (Data.Proxy.Proxy
+                      @ *
+                      @ ("steps"
+                         Servant.API.Sub.:> (Servant.API.ReqBody.ReqBody
+                                               '[Servant.API.ContentTypes.JSON] Types.InputString
+                                             Servant.API.Sub.:> Servant.API.Verbs.Post
+                                                                  '[Servant.API.ContentTypes.JSON]
+                                                                  [Types.GenericAST])))
+                   Servant.Client.Core.Internal.Request.defaultRequest) -}
+"SPEC/Client $fFromJSON[] @ GenericAST" [orphan] forall (v :: Data.Aeson.Types.FromJSON.FromJSON
+                                                                Types.GenericAST)
+  Data.Aeson.Types.FromJSON.$fFromJSON[] @ Types.GenericAST v
+  = Client.$s$fFromJSON[]
+"SPEC/Client $fHasClientm:>5 @ JSON @ InputString @ ClientM @ (Verb
+                                                                'POST 200 '[JSON] [GenericAST]) _ _" [orphan] forall @ mods :: [*]
+                                                                                                                                                                                         @ cts :: [*]
+                                                                                                                                                                                         (v1 :: Servant.Client.Core.Internal.HasClient.HasClient
+                                                                                                                                                                                                  Servant.Client.Internal.HttpClient.ClientM
+                                                                                                                                                                                                  (Servant.API.Verbs.Verb
+                                                                                                                                                                                                     'Network.HTTP.Types.Method.POST
+                                                                                                                                                                                                     200
+                                                                                                                                                                                                     '[Servant.API.ContentTypes.JSON]
+                                                                                                                                                                                                     [Types.GenericAST]))
+                                                                                                                                                                                         (v :: Servant.API.ContentTypes.MimeRender
+                                                                                                                                                                                                 Servant.API.ContentTypes.JSON
+                                                                                                                                                                                                 Types.InputString)
+  Servant.Client.Core.Internal.HasClient.$fHasClientm:>5 @ Servant.API.ContentTypes.JSON
+                                                         @ Types.InputString
+                                                         @ Servant.Client.Internal.HttpClient.ClientM
+                                                         @ (Servant.API.Verbs.Verb
+                                                              'Network.HTTP.Types.Method.POST
+                                                              200
+                                                              '[Servant.API.ContentTypes.JSON]
+                                                              [Types.GenericAST])
+                                                         @ mods
+                                                         @ cts
+                                                         v
+                                                         v1
+  = Client.$s$fHasClientm:>4_$cclientWithRoute_$s$fHasClientm:>1
+      @ mods
+      @ cts
+"SPEC/Client $fHasClientm:>5 @ JSON @ StepsWithKey @ ClientM @ (Verb
+                                                                 'POST 200 '[JSON] ResponseMsg) _ _" [orphan] forall @ mods :: [*]
+                                                                                                                                                                                          @ cts :: [*]
+                                                                                                                                                                                          (v1 :: Servant.Client.Core.Internal.HasClient.HasClient
+                                                                                                                                                                                                   Servant.Client.Internal.HttpClient.ClientM
+                                                                                                                                                                                                   (Servant.API.Verbs.Verb
+                                                                                                                                                                                                      'Network.HTTP.Types.Method.POST
+                                                                                                                                                                                                      200
+                                                                                                                                                                                                      '[Servant.API.ContentTypes.JSON]
+                                                                                                                                                                                                      Types.ResponseMsg))
+                                                                                                                                                                                          (v :: Servant.API.ContentTypes.MimeRender
+                                                                                                                                                                                                  Servant.API.ContentTypes.JSON
+                                                                                                                                                                                                  Types.StepsWithKey)
+  Servant.Client.Core.Internal.HasClient.$fHasClientm:>5 @ Servant.API.ContentTypes.JSON
+                                                         @ Types.StepsWithKey
+                                                         @ Servant.Client.Internal.HttpClient.ClientM
+                                                         @ (Servant.API.Verbs.Verb
+                                                              'Network.HTTP.Types.Method.POST
+                                                              200
+                                                              '[Servant.API.ContentTypes.JSON]
+                                                              Types.ResponseMsg)
+                                                         @ mods
+                                                         @ cts
+                                                         v
+                                                         v1
+  = Client.$s$fHasClientm:>4_$cclientWithRoute_$s$fHasClientm:>5
+      @ mods
+      @ cts
+"SPEC/Client $fHasClientm:>8 @ "studentKey" @ [Char] @ ClientM @ (Verb
+                                                                   'GET
+                                                                   200
+                                                                   '[JSON]
+                                                                   [GenericAST]) @ '[Optional,
+                                                                                     Strict]" [orphan] forall (v3 :: Data.Singletons.Bool.SBoolI
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       (Servant.API.Modifiers.FoldRequired
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          '[Servant.API.Modifiers.Optional,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Servant.API.Modifiers.Strict]))
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              (v2 :: Servant.Client.Core.Internal.HasClient.HasClient
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Servant.Client.Internal.HttpClient.ClientM
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       (Servant.API.Verbs.Verb
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          'Network.HTTP.Types.Method.GET
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          200
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          '[Servant.API.ContentTypes.JSON]
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          [Types.GenericAST]))
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              (v1 :: Web.Internal.HttpApiData.ToHttpApiData
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       [GHC.Types.Char])
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              (v :: GHC.TypeLits.KnownSymbol
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      "studentKey")
+  Servant.Client.Core.Internal.HasClient.$fHasClientm:>8 @ "studentKey"
+                                                         @ [GHC.Types.Char]
+                                                         @ Servant.Client.Internal.HttpClient.ClientM
+                                                         @ (Servant.API.Verbs.Verb
+                                                              'Network.HTTP.Types.Method.GET
+                                                              200
+                                                              '[Servant.API.ContentTypes.JSON]
+                                                              [Types.GenericAST])
+                                                         @ '[Servant.API.Modifiers.Optional,
+                                                             Servant.API.Modifiers.Strict]
+                                                         v
+                                                         v1
+                                                         v2
+                                                         v3
+  = Client.$s$fHasClientm:>4_$cclientWithRoute_$s$fHasClientm:>8
+"SPEC/Client $fHasClientmVerb2 @ StdMethod @ ClientM @ JSON @ [GenericAST] @ 'GET @ '[JSON] @ '[] _" [orphan] forall @ status :: GHC.Types.Nat
+                                                                                                                     (v3 :: ('[Servant.API.ContentTypes.JSON] :: [*])
+                                                                                                                            Data.Type.Equality.~ ('[Servant.API.ContentTypes.JSON] :: [*]))
+                                                                                                                     (v2 :: Servant.API.Verbs.ReflectMethod
+                                                                                                                              'Network.HTTP.Types.Method.GET)
+                                                                                                                     (v1 :: Servant.API.ContentTypes.MimeUnrender
+                                                                                                                              Servant.API.ContentTypes.JSON
+                                                                                                                              [Types.GenericAST])
+                                                                                                                     (v :: Servant.Client.Core.Internal.RunClient.RunClient
+                                                                                                                             Servant.Client.Internal.HttpClient.ClientM)
+  Servant.Client.Core.Internal.HasClient.$fHasClientmVerb2 @ Network.HTTP.Types.Method.StdMethod
+                                                           @ Servant.Client.Internal.HttpClient.ClientM
+                                                           @ Servant.API.ContentTypes.JSON
+                                                           @ [Types.GenericAST]
+                                                           @ 'Network.HTTP.Types.Method.GET
+                                                           @ '[Servant.API.ContentTypes.JSON]
+                                                           @ '[]
+                                                           @ status
+                                                           v
+                                                           v1
+                                                           v2
+                                                           v3
+  = Client.$s$fHasClientm:>4_$cclientWithRoute_$s$fHasClientmVerb2
+      @ status
+"SPEC/Client $fMimeUnrenderTYPEJSONa @ ResponseMsg" [orphan] forall (v :: Data.Aeson.Types.FromJSON.FromJSON
+                                                                            Types.ResponseMsg)
+  Servant.API.ContentTypes.$fMimeUnrenderTYPEJSONa @ Types.ResponseMsg
+                                                   v
+  = Client.$s$fHasClientm:>4_$cclientWithRoute_$s$fMimeUnrenderTYPEJSONa
+"SPEC/Client $fMimeUnrenderTYPEJSONa @ [GenericAST]" [orphan] forall (v :: Data.Aeson.Types.FromJSON.FromJSON
+                                                                             [Types.GenericAST])
+  Servant.API.ContentTypes.$fMimeUnrenderTYPEJSONa @ [Types.GenericAST]
+                                                   v
+  = Client.$s$fHasClientm:>25_$s$fMimeUnrenderTYPEJSONa
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

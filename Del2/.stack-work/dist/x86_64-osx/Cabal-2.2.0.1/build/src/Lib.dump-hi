@@ -1,0 +1,76 @@
+
+==================== FINAL INTERFACE ====================
+2018-10-30 15:32:41.429527 UTC
+
+interface Oblig2-INF122-0.1.0.0-8cpJ2QxhiFI3jrCtHwoMCS:Lib 8043
+  interface hash: 56fe7b399f986dec5c2926110e04a52a
+  ABI hash: 3a43d763fc5ea525f7d2dc26cda939e5
+  export-list hash: 62f4a8d5646c9c1a7e76cf04d01b0769
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 8f52f5e5828eb5661f405d8d9ca450ec
+  opt_hash: 14e536840aca4e889cad654e6f9b79c1
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Lib.someFunc
+module dependencies:
+package dependencies: base-4.11.1.0* ghc-prim-0.5.2.0
+                      integer-gmp-1.0.2.0
+orphans: base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: base-4.11.1.0:Control.Applicative
+                         base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity base-4.11.1.0:Data.Monoid
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:GHC.Generics
+                         base-4.11.1.0:GHC.IO.Exception
+import  -/  base-4.11.1.0:Prelude 0750c25585e2b797cd78291d423d39dd
+import  -/  base-4.11.1.0:System.IO ce09fff7d191d14067bddc2efd9b53a4
+import  -/  ghc-prim-0.5.2.0:GHC.Types d9b3023de7feae4a5308d643da5543f7
+85395557a4e2409ae5649c591219e980
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Lib.$trModule3 Lib.$trModule1) -}
+fce3948d9ad96d24e5680bc417d08c18
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Lib.$trModule2) -}
+a48bea7d53284a3fa07974dd441f147b
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Lib"#) -}
+7d27ee547aced7c8c9a35679ce303582
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Lib.$trModule4) -}
+446b34b46bbe021e18db96b745052d02
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Oblig2-INF122-0.1.0.0-8cpJ2QxhiFI3jrCtHwoMCS"#) -}
+db2e6f0e2a5164fcfeacffa757bd02ca
+  someFunc :: GHC.Types.IO ()
+  {- Arity: 1,
+     Unfolding: InlineRule (0, True, True)
+                Lib.someFunc1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+d97c1e21ca5f6b28e78f4e54b47d32ef
+  someFunc1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.IO.Handle.Text.hPutStr2
+                   GHC.IO.Handle.FD.stdout
+                   Lib.someFunc2
+                   GHC.Types.True) -}
+a5547a057f9033fa5fc791504cbc1b44
+  someFunc2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Lib.someFunc3) -}
+b8665d45fa69ce772a8f7e671b23630b
+  someFunc3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("someFunc"#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

@@ -1,0 +1,12 @@
+Configuring uri-bytestring-0.3.2.1...
+clang: warning: argument unused during compilation: '-nopie' [-Wunused-command-line-argument]
+Preprocessing library for uri-bytestring-0.3.2.1..
+Building library for uri-bytestring-0.3.2.1..
+[1 of 5] Compiling URI.ByteString.Types ( src/URI/ByteString/Types.hs, .stack-work/dist/x86_64-osx/Cabal-2.2.0.1/build/URI/ByteString/Types.o )
+[2 of 5] Compiling URI.ByteString.Lens ( src/URI/ByteString/Lens.hs, .stack-work/dist/x86_64-osx/Cabal-2.2.0.1/build/URI/ByteString/Lens.o )
+[3 of 5] Compiling URI.ByteString.Internal ( src/URI/ByteString/Internal.hs, .stack-work/dist/x86_64-osx/Cabal-2.2.0.1/build/URI/ByteString/Internal.o )
+[4 of 5] Compiling URI.ByteString   ( src/URI/ByteString.hs, .stack-work/dist/x86_64-osx/Cabal-2.2.0.1/build/URI/ByteString.o )
+[5 of 5] Compiling URI.ByteString.QQ ( src/URI/ByteString/QQ.hs, .stack-work/dist/x86_64-osx/Cabal-2.2.0.1/build/URI/ByteString/QQ.o )
+ignoring (possibly broken) abi-depends field for packages
+Installing library in /Users/pokki/.stack/snapshots/x86_64-osx/lts-12.14/8.4.3/lib/x86_64-osx-ghc-8.4.3/uri-bytestring-0.3.2.1-Ce9QwX4fMU7LUbTdgrtHNC
+Registering library for uri-bytestring-0.3.2.1..

@@ -1,0 +1,47 @@
+name:                Oblig2-INF122
+version:             0.1.0.0
+github:              "aaalvik/Oblig2-INF122"
+license:             BSD3
+author:              "Ragnhild Aalvik"
+copyright:           "2018 Ragnhild Aalvik"
+
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/githubuser/Oblig2-INF122#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+
+library:
+  source-dirs: src
+
+executables:
+  Oblig2-INF122-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - Oblig2-INF122
+
+dependencies:
+  - base
+  - servant
+  - servant-server
+  - servant-options
+  - servant-client
+  - http-client
+  - transformers
+  - aeson
+  - wai
+  - wai-cors
+  - warp
+  - open-browser
