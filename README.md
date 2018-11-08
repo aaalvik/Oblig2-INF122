@@ -1,6 +1,6 @@
 # Oblig2-INF122
 
-Du skal skrive all kode til obligen i dette repoet. 
+Du skal skrive all kode til obligen i dette repoet. Hver deloppgave forklarer hvilken fil/mappe du skal jobbe i. 
 
 ## Installasjonsinstrukser
 
@@ -18,12 +18,12 @@ git clone git@github.com:aaalvik/Oblig2-INF122.git
 cd Oblig2-INF122
 ```
 
-3. Start å kode! 
+3. Start å kode! Hver deloppgave forklarer hvilken fil/mappe i repoet du skal jobbe i. 
 
 
 ## Instrukser til Del 2
 
-For å få kompilert og kjørt koden i denne mappen må du bruke ```cabal```, fordi det er brukt noen pakker som ikke fungerer i ghci.
+For å få kompilert og kjørt koden i denne mappen må du bruke ```cabal```, fordi det er brukt noen pakker som ikke fungerer i ghci. Det betyr at du ikke får testet koden i ghci, men må følge instruksene under for å kompilere og kjøre: 
 
 For å bygge prosjektet (kompilere):
 ```
