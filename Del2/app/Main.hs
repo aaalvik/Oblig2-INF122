@@ -39,5 +39,10 @@ eval expr =
 
 
 -- TODO: Lim inn implementasjonen av denne fra Del1
+prettyPrint :: Expr -> IO () 
+takeOneStep expr = undefined 
+
+
+-- TODO: Lim inn implementasjonen av denne fra Del1
 takeOneStep :: Expr -> Expr 
-takeOneStep = undefined 
+takeOneStep expr = undefined 

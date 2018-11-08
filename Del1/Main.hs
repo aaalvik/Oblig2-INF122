@@ -4,18 +4,18 @@ module Main where
 import Parser -- Denne importerer parse funksjonen så du kan teste prettyPrint på strenger
 
 
-{- Du kan teste prettyPrint slik: prettyPrint (parse "+ 4 5")
--}
+--Du kan teste prettyPrint slik: prettyPrint (parse "+ 4 5")
+main = prettyPrint (parse "+ 4 5")
 
 
 -- Oppgave 1.1
 prettyPrint :: Expr -> IO () 
-prettyPrint = undefined 
+prettyPrint expr = undefined 
 
 
 -- Oppgave 1.2 
 takeOneStep :: Expr -> Expr 
-takeOneStep = undefined 
+takeOneStep expr = undefined 
 
 
 

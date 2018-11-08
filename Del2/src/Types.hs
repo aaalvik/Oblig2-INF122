@@ -17,7 +17,7 @@ data Expr
     | Mult Expr Expr 
     | Neg Expr 
     | If Expr Expr Expr 
-    deriving (Eq, Show)
+    deriving (Eq, Show, Read)
 
 
 data GenericAST = GenericAST {

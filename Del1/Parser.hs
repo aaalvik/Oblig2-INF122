@@ -8,7 +8,7 @@ data Expr
     | Mult Expr Expr 
     | Neg Expr 
     | If Expr Expr Expr 
-    deriving (Eq, Show, Read)
+    deriving (Show, Read)
 
 
 {- Grammatikk for språket Expr :
