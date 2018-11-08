@@ -25,13 +25,18 @@ cd Oblig2-INF122
 
 For å få kompilert og kjørt koden i denne mappen må du bruke ```cabal```, fordi det er brukt noen pakker som ikke fungerer i ghci. Det betyr at du ikke får testet koden i ghci, men må følge instruksene under for å kompilere og kjøre: 
 
-For å bygge prosjektet (kompilere):
+For å sette opp prosjektet første gang (dette kan ta litt tid):
 ```
 cd Del2
+cabal install
+```
+
+For å bygge prosjektet/kompilere (dette må gjøres hver gang du skal kjøre filen) – fortsatt i mappen Del2/:
+```
 cabal build
 ```
 
-For å kjøre programmet, altså main-funksjonen i Main.hs:
+For å kjøre programmet, altså main-funksjonen i Main.hs – fortsatt i mappen Del2/:
 ```
 cabal run 
 ```
