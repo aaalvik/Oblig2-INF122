@@ -10,7 +10,7 @@ Du skal skrive all kode til obligen i dette repoet. Hver deloppgave forklarer hv
 
 #### Installasjon
 
-1. Åpne terminal og naviger til en passende mappe
+1. Åpne terminal/cmd og naviger til en passende mappe
 
 2. Klon repoet:
 ```
