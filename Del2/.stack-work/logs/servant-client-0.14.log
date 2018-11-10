@@ -1,9 +1,0 @@
-Configuring servant-client-0.14...
-clang: warning: argument unused during compilation: '-nopie' [-Wunused-command-line-argument]
-Preprocessing library for servant-client-0.14..
-Building library for servant-client-0.14..
-[1 of 2] Compiling Servant.Client.Internal.HttpClient ( src/Servant/Client/Internal/HttpClient.hs, .stack-work/dist/x86_64-osx/Cabal-2.2.0.1/build/Servant/Client/Internal/HttpClient.o )
-[2 of 2] Compiling Servant.Client   ( src/Servant/Client.hs, .stack-work/dist/x86_64-osx/Cabal-2.2.0.1/build/Servant/Client.o )
-ignoring (possibly broken) abi-depends field for packages
-Installing library in /Users/pokki/.stack/snapshots/x86_64-osx/lts-12.14/8.4.3/lib/x86_64-osx-ghc-8.4.3/servant-client-0.14-BadJWoCSB3x3n0sB6cPEvf
-Registering library for servant-client-0.14..

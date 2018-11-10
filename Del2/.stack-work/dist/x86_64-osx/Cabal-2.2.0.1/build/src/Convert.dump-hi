@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2018-10-30 15:32:46.130508 UTC
+2018-11-09 16:37:19.777805 UTC
 
-interface Oblig2-INF122-0.1.0.0-8cpJ2QxhiFI3jrCtHwoMCS:Convert 8043
-  interface hash: 05084b57dd923840bf4f9b9352ae4edb
-  ABI hash: 19badcc5cacefd88b920e8e831a21612
-  export-list hash: 4b399ae8be1d58a7066f79a163891cf2
+interface Del2-0.1.0.0-4VeKtiHkpZmHZk3lzLXOdF:Convert 8044
+  interface hash: 431603b939ebc10da35433a2544f1ed7
+  ABI hash: 7cb56843b138dc1ad44822beff8b67c2
+  export-list hash: 6e2eff269110f7c4fd17bc12141bf92e
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 8f52f5e5828eb5661f405d8d9ca450ec
   opt_hash: 14e536840aca4e889cad654e6f9b79c1
@@ -24,7 +24,7 @@ package dependencies: StateVar-1.1.1.1 aeson-1.3.1.1 array-0.5.2.0
                       comonad-5.0.4 containers-0.5.11.0 contravariant-1.4.1 cookie-0.4.4
                       data-default-class-0.1.2.0 deepseq-1.4.3.0 distributive-0.5.3
                       dlist-0.8.0.5 exceptions-0.10.0 free-5.0.2 generics-sop-0.3.2.0
-                      ghc-boot-th-8.4.3 ghc-prim-0.5.2.0 hashable-1.2.7.0
+                      ghc-boot-th-8.4.4 ghc-prim-0.5.2.0 hashable-1.2.7.0
                       http-api-data-0.3.8.1 http-client-0.5.13.1 http-media-0.7.1.3
                       http-types-0.12.2 integer-gmp-1.0.2.0 integer-logarithms-1.0.2.2
                       memory-0.14.18 monad-control-1.0.2.3 mtl-2.2.2 network-2.6.3.6
@@ -61,7 +61,7 @@ orphans: generics-sop-0.3.2.0:Generics.SOP.Instances
          text-1.2.3.1:Data.Text.Show
          bytestring-0.10.8.2:Data.ByteString.Builder base-4.11.1.0:GHC.Float
          base-4.11.1.0:GHC.Base
-family instance modules: Oblig2-INF122-0.1.0.0-8cpJ2QxhiFI3jrCtHwoMCS:Types
+family instance modules: Del2-0.1.0.0-4VeKtiHkpZmHZk3lzLXOdF:Types
                          aeson-1.3.1.1:Data.Aeson.Types.Internal
                          attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
                          base-4.11.1.0:Control.Applicative base-4.11.1.0:Data.Complex
@@ -105,8 +105,8 @@ family instance modules: Oblig2-INF122-0.1.0.0-8cpJ2QxhiFI3jrCtHwoMCS:Types
                          generics-sop-0.3.2.0:Generics.SOP.Instances
                          generics-sop-0.3.2.0:Generics.SOP.NP
                          generics-sop-0.3.2.0:Generics.SOP.NS
-                         ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
-                         ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         ghc-boot-th-8.4.4:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.4.4:GHC.LanguageExtensions.Type
                          http-api-data-0.3.8.1:Web.Internal.FormUrlEncoded
                          http-client-0.5.13.1:Network.HTTP.Client
                          monad-control-1.0.2.3:Control.Monad.Trans.Control
@@ -139,43 +139,43 @@ family instance modules: Oblig2-INF122-0.1.0.0-8cpJ2QxhiFI3jrCtHwoMCS:Types
                          vector-0.12.0.1:Data.Vector.Unboxed
                          vector-0.12.0.1:Data.Vector.Unboxed.Base
                          zlib-0.6.2:Codec.Compression.Zlib.Stream
-import  -/  Types 1dea4a9e2a5fd9320e8b4119029235e3
-  exports: a028046eff8517520af661d4fa72fc7f
-  Add d90c9ed5118cbb70b0ca754021d28e87
-  Expr 2241269ddc2725405dfddd27b09f4f0e
-  GenericAST 4e329105a5217614e063269ed15b8b58
-  GenericAST 42e90e148e9418bd521e3b242d29289a
-  If 7c4136cde2865a4cf2edac5a3666a011
-  Mult dd08b459bc257697e2832a541cd27586
-  Neg 8061772b7dfe395b47cc42857cf41576
-  Num 0de3d63ae20c5c0ee2d548ed1ead0d70
+import  -/  Types 1678f3972463fc7a4b8bff978eba4ffd
+  exports: 51240acb85db6550610c9974cb2984de
+  Add b28fd1baf7881e2f88ffdfbce4623f05
+  Expr bf1b7b1282f913ed3073870aaeb875eb
+  GenericAST ce0ecc5d6172851353b04a8863a79da1
+  GenericAST be399546bc4573915e0a2d65f495dbb1
+  If 7ae083b9eb53ff5cce6e32466b97256c
+  Mult 764c84667b226fecee577b2364e05ab3
+  Neg 3fe74e6667c8086bc3f1a06179f7f3e6
+  Num 687f769c42b2131838f469634f2ed1a8
 import  -/  base-4.11.1.0:GHC.Show 73be67392447c974f19c3befd83c46c0
 import  -/  base-4.11.1.0:Prelude 0750c25585e2b797cd78291d423d39dd
-c9fa2b4f2e68401491a3b9041ddda935
+0b5f35c8bc32599232ef0139d83b6bc6
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module
                    Convert.$trModule3
                    Convert.$trModule1) -}
-ab63a15a1346ef0ecff5afb30ce9586e
+a5755444332a05484d8d677d34c8b888
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS Convert.$trModule2) -}
-3e7918560830fe1e1b2f01a5c3add9dc
+7f9ec8971f25a82ee294a361cc106b42
   $trModule2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Convert"#) -}
-4ec120dcf8e1a25ebb2e634a5c5946e0
+43d2a49b5f6f090ab91d58dc6907c73e
   $trModule3 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS Convert.$trModule4) -}
-b236f61f3112d25b73ffbd928ab5b229
+fc6fce874e0dc5366a3b9df2e549ab33
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: ("Oblig2-INF122-0.1.0.0-8cpJ2QxhiFI3jrCtHwoMCS"#) -}
-c282484444882001239ed64a195b4cb2
+     Unfolding: ("Del2-0.1.0.0-4VeKtiHkpZmHZk3lzLXOdF"#) -}
+34d6469a044de8a8b11ea0bb11fca64b
   $wtoGeneric :: Types.Expr -> (# Types.Name, [Types.GenericAST] #)
   {- Arity: 1, Strictness: <S,1*U>, Inline: [0] -}
-0da80fee0d941da50ec88f17d063f9d8
+56960432d27798fbb19807aeb8ac03a6
   toGeneric :: Types.Expr -> Types.GenericAST
   {- Arity: 1, Strictness: <S,1*U>m, Inline: [0],
      Unfolding: InlineRule (1, True, False)

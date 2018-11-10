@@ -1,12 +1,12 @@
 
 ==================== FINAL INTERFACE ====================
-2018-10-30 15:32:46.80451 UTC
+2018-11-09 16:37:20.497373 UTC
 
-interface Oblig2-INF122-0.1.0.0-8cpJ2QxhiFI3jrCtHwoMCS:Client 8043
-  interface hash: 70471df977f62bdee6f9c1541db9107a
-  ABI hash: 541d95078277e20d38485ebcb2c6e439
-  export-list hash: 9cc6c7217b64a25a4f49eff7a1a17ec2
-  orphan hash: 8a42943803d7d2b38d212abe84df6158
+interface Del2-0.1.0.0-4VeKtiHkpZmHZk3lzLXOdF:Client 8044
+  interface hash: ce3f9e71ea5a74748514318f6d54202f
+  ABI hash: 581d34774fd21c46a4bc67155bd6e134
+  export-list hash: b69b705adf86833c52da46f604e955b5
+  orphan hash: c93095ba4ee482dc64e6ef52cd40f3b7
   flag hash: 2e369f466d407a05cc1cefeb8229f04e
   opt_hash: 14e536840aca4e889cad654e6f9b79c1
   hpc_hash: 93b885adfe0da089cdf634904fd59f71
@@ -20,6 +20,7 @@ exports:
   Client.query
   Client.run
   Client.steps
+  Client.visualise
   Client.API
 module dependencies: Convert Types
 package dependencies: StateVar-1.1.1.1 aeson-1.3.1.1 array-0.5.2.0
@@ -30,22 +31,22 @@ package dependencies: StateVar-1.1.1.1 aeson-1.3.1.1 array-0.5.2.0
                       comonad-5.0.4 containers-0.5.11.0 contravariant-1.4.1 cookie-0.4.4
                       data-default-class-0.1.2.0 deepseq-1.4.3.0 distributive-0.5.3
                       dlist-0.8.0.5 exceptions-0.10.0 free-5.0.2 generics-sop-0.3.2.0
-                      ghc-boot-th-8.4.3 ghc-prim-0.5.2.0 hashable-1.2.7.0
+                      ghc-boot-th-8.4.4 ghc-prim-0.5.2.0 hashable-1.2.7.0
                       http-api-data-0.3.8.1 http-client-0.5.13.1 http-media-0.7.1.3
                       http-types-0.12.2 integer-gmp-1.0.2.0 integer-logarithms-1.0.2.2
                       memory-0.14.18 monad-control-1.0.2.3 mtl-2.2.2 network-2.6.3.6
-                      network-uri-2.6.1.0 parsec-3.1.13.0 pretty-1.1.3.6
-                      primitive-0.6.3.0 profunctors-5.2.2 random-1.1 safe-0.3.17
-                      scientific-0.3.6.2 semigroupoids-5.2.2 servant-0.14.1
-                      servant-client-0.14 servant-client-core-0.14.1 singleton-bool-0.1.4
-                      stm-2.4.5.1 streaming-commons-0.2.1.0 string-conversions-0.4.0.1
-                      tagged-0.8.5 template-haskell-2.13.0.0 text-1.2.3.1
-                      th-abstraction-0.2.8.0 th-lift-0.7.11 th-lift-instances-0.1.11
-                      time-1.8.0.2 time-locale-compat-0.1.1.5 transformers-0.5.5.0
-                      transformers-base-0.4.5.2 transformers-compat-0.6.2
-                      unordered-containers-0.2.9.0 uri-bytestring-0.3.2.1
-                      utf8-string-1.0.1.1 uuid-types-1.0.3 vault-0.3.1.2 vector-0.12.0.1
-                      zlib-0.6.2
+                      network-uri-2.6.1.0 open-browser-0.2.1.0 parsec-3.1.13.0
+                      pretty-1.1.3.6 primitive-0.6.3.0 process-1.6.3.0 profunctors-5.2.2
+                      random-1.1 safe-0.3.17 scientific-0.3.6.2 semigroupoids-5.2.2
+                      servant-0.14.1 servant-client-0.14 servant-client-core-0.14.1
+                      singleton-bool-0.1.4 stm-2.4.5.1 streaming-commons-0.2.1.0
+                      string-conversions-0.4.0.1 tagged-0.8.5 template-haskell-2.13.0.0
+                      text-1.2.3.1 th-abstraction-0.2.8.0 th-lift-0.7.11
+                      th-lift-instances-0.1.11 time-1.8.0.2 time-locale-compat-0.1.1.5
+                      transformers-0.5.5.0 transformers-base-0.4.5.2
+                      transformers-compat-0.6.2 unix-2.7.2.2 unordered-containers-0.2.9.0
+                      uri-bytestring-0.3.2.1 utf8-string-1.0.1.1 uuid-types-1.0.3
+                      vault-0.3.1.2 vector-0.12.0.1 zlib-0.6.2
 orphans: generics-sop-0.3.2.0:Generics.SOP.Instances
          generics-sop-0.3.2.0:Generics.SOP.Constraint
          attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
@@ -67,7 +68,7 @@ orphans: generics-sop-0.3.2.0:Generics.SOP.Instances
          text-1.2.3.1:Data.Text.Show
          bytestring-0.10.8.2:Data.ByteString.Builder base-4.11.1.0:GHC.Float
          base-4.11.1.0:GHC.Base
-family instance modules: Oblig2-INF122-0.1.0.0-8cpJ2QxhiFI3jrCtHwoMCS:Types
+family instance modules: Del2-0.1.0.0-4VeKtiHkpZmHZk3lzLXOdF:Types
                          aeson-1.3.1.1:Data.Aeson.Types.Internal
                          attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
                          base-4.11.1.0:Control.Applicative base-4.11.1.0:Data.Complex
@@ -111,8 +112,8 @@ family instance modules: Oblig2-INF122-0.1.0.0-8cpJ2QxhiFI3jrCtHwoMCS:Types
                          generics-sop-0.3.2.0:Generics.SOP.Instances
                          generics-sop-0.3.2.0:Generics.SOP.NP
                          generics-sop-0.3.2.0:Generics.SOP.NS
-                         ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
-                         ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         ghc-boot-th-8.4.4:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.4.4:GHC.LanguageExtensions.Type
                          http-api-data-0.3.8.1:Web.Internal.FormUrlEncoded
                          http-client-0.5.13.1:Network.HTTP.Client
                          monad-control-1.0.2.3:Control.Monad.Trans.Control
@@ -145,40 +146,41 @@ family instance modules: Oblig2-INF122-0.1.0.0-8cpJ2QxhiFI3jrCtHwoMCS:Types
                          vector-0.12.0.1:Data.Vector.Unboxed
                          vector-0.12.0.1:Data.Vector.Unboxed.Base
                          zlib-0.6.2:Codec.Compression.Zlib.Stream
-import  -/  Convert 19badcc5cacefd88b920e8e831a21612
-  exports: 4b399ae8be1d58a7066f79a163891cf2
-  toGeneric 0da80fee0d941da50ec88f17d063f9d8
-import  -/  Types 1dea4a9e2a5fd9320e8b4119029235e3
-  exports: a028046eff8517520af661d4fa72fc7f
-  Expr 2241269ddc2725405dfddd27b09f4f0e
-  GenericAST 42e90e148e9418bd521e3b242d29289a
-  InputString 9ca8a35bf1f6269f2a247bc1425c146a
-  ResponseMsg bf35ce17a75727cd14a8e7ecc76fbdc0
-  StepsWithKey 6f62b1a835e1beeb2abe7c65a081d64d
-  StepsWithKey 42e90e148e9418bd521e3b242d29289a
-  evalSteps 42e90e148e9418bd521e3b242d29289a
-  key 42e90e148e9418bd521e3b242d29289a
-import  -/  aeson-1.3.1.1:Data.Aeson c2e0eb22771d71f2c3c52186a6e01949
+import  -/  Convert 7cb56843b138dc1ad44822beff8b67c2
+  exports: 6e2eff269110f7c4fd17bc12141bf92e
+  toGeneric 56960432d27798fbb19807aeb8ac03a6
+import  -/  Types 1678f3972463fc7a4b8bff978eba4ffd
+  exports: 51240acb85db6550610c9974cb2984de
+  Expr bf1b7b1282f913ed3073870aaeb875eb
+  GenericAST be399546bc4573915e0a2d65f495dbb1
+  InputString 18bd1ef947c325ed9b22c68594f6c85a
+  ResponseMsg 4c145c8edcdf1ddb697ec00f0c2dc38f
+  StepsWithKey d8f3d5d14339d036e6b20d75602a2962
+  StepsWithKey be399546bc4573915e0a2d65f495dbb1
+  evalSteps be399546bc4573915e0a2d65f495dbb1
+  key be399546bc4573915e0a2d65f495dbb1
+import  -/  aeson-1.3.1.1:Data.Aeson eaae3b07ec740ee7e47dbaa91ff71c8b
 import  -/  base-4.11.1.0:Data.Either 39d922b371c4c52d426e9ee66de8371a
 import  -/  base-4.11.1.0:Data.Proxy a80a60a2fdceabfeb4d110d23b808844
 import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
 import  -/  base-4.11.1.0:GHC.Generics 4d1469b3e29804a05a1be33d11accff6
 import  -/  base-4.11.1.0:Prelude 0750c25585e2b797cd78291d423d39dd
-import  -/  base-4.11.1.0:System.IO ce09fff7d191d14067bddc2efd9b53a4
+import  -/  base-4.11.1.0:System.IO e02b6055b5362a3eac04f83991602a53
 import  -/  ghc-prim-0.5.2.0:GHC.Types d9b3023de7feae4a5308d643da5543f7
-import  -/  http-client-0.5.13.1:Network.HTTP.Client 037a3a152e816ef78b2a637b5616a083
-import  -/  http-client-0.5.13.1:Network.HTTP.Client.Manager 8dd743acf7015b44679a1ac4130198a0
-import  -/  servant-0.14.1:Servant.API 4175ee3ed401eb0b46b1a3b8f785e7b1
-import  -/  servant-0.14.1:Servant.API.Alternative 85e18619f60990bca5da2a5f42bd48f7
-import  -/  servant-0.14.1:Servant.API.ContentTypes d10cba7f4b9eae2cc7138cbaa4bd3e7d
-import  -/  servant-0.14.1:Servant.API.QueryParam d9fb8400b188ed6d12108461a63bcfe4
-import  -/  servant-0.14.1:Servant.API.ReqBody 05ede473f13dc4faff6e75dfa8865ba5
-import  -/  servant-0.14.1:Servant.API.Sub 21a711018cc6d1031026be5adcac1794
-import  -/  servant-0.14.1:Servant.API.Verbs cdd2a5316188d3aa2b6fe4b0adef1ce5
-import  -/  servant-client-0.14:Servant.Client 9e9abe7ff8b41ffcd8f105dff59e9fc4
-import  -/  servant-client-0.14:Servant.Client.Internal.HttpClient 0534587ab8e21229fe69b9696da68cc5
-import  -/  servant-client-core-0.14.1:Servant.Client.Core.Internal.BaseUrl a2c57f7788a8951b58e38b92c395be22
-bdfce0c814195dff1653225fbf37fa70
+import  -/  http-client-0.5.13.1:Network.HTTP.Client 4301df3a6bdbba9e230f08a47d63c1d5
+import  -/  http-client-0.5.13.1:Network.HTTP.Client.Manager 7312d005be74462936c7bd19b82e2261
+import  -/  open-browser-0.2.1.0:Web.Browser 696530155a9e13c33c75bba005e8ba4f
+import  -/  servant-0.14.1:Servant.API 554051eb521ed36ebed7f8a7c335efd8
+import  -/  servant-0.14.1:Servant.API.Alternative d3a8b9c9637839ac2431effcd7403e64
+import  -/  servant-0.14.1:Servant.API.ContentTypes eb53685a7a3c869e734d54aee8fc35a5
+import  -/  servant-0.14.1:Servant.API.QueryParam 7838eee41f37698fd9b6b02cf74e04e1
+import  -/  servant-0.14.1:Servant.API.ReqBody da431356070ef656e5ac1411b24e81fa
+import  -/  servant-0.14.1:Servant.API.Sub 31d456571d1ba34a1518b1357d869452
+import  -/  servant-0.14.1:Servant.API.Verbs ee67c42e9f13b701d1f07a18dcfa610e
+import  -/  servant-client-0.14:Servant.Client 17dd6de7c7f3dc69a0283aec6e1ef140
+import  -/  servant-client-0.14:Servant.Client.Internal.HttpClient e6cf64ca058be682a40e8b089498d0f4
+import  -/  servant-client-core-0.14.1:Servant.Client.Core.Internal.BaseUrl 1008200fac49c328d5a766aed859b75f
+10acdd315d8542790e608cc30fdb0fdf
   $s$fFromJSON[] ::
     Data.Aeson.Types.FromJSON.FromJSON [Types.GenericAST]
   {- Strictness: m, Inline: CONLIKE,
@@ -188,14 +190,14 @@ bdfce0c814195dff1653225fbf37fa70
                   (Data.Aeson.Types.FromJSON.$fFromJSONKey[]_$cparseJSONList
                      @ Types.GenericAST
                      Types.$fFromJSONGenericAST) -}
-949f254bacbe4bf6ee5b0a34e0f3374e
+1b40fe3dbfaadcef1eb8450cf1c5e75c
   $s$fHasClientm:>1 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    Client.$s$fHasClientm:>2) -}
-7236cb05b0a71b028831c26169a80aab
+38b847466976f1c2f97f0e829c3d76a8
   $s$fHasClientm:>2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("studentKey"#) -}
-c89c0dd2b87a15d250c026fdade95718
+0e5e60131c89dae1e96880b78e6a5e66
   $s$fHasClientm:>25_$s$fMimeUnrenderTYPEJSONa ::
     Servant.API.ContentTypes.MimeUnrender
       Servant.API.ContentTypes.JSON [Types.GenericAST]
@@ -216,7 +218,7 @@ c89c0dd2b87a15d250c026fdade95718
                      @ [Types.GenericAST]
                      Client.$s$fFromJSON[]
                      eta) -}
-f27bc7afc111a002141f1bde408fbe7a
+686855a83e8eed12234e39a70444e956
   $s$fHasClientm:>4_$cclientWithRoute1 ::
     ('[Servant.API.ContentTypes.JSON] :: [*])
     GHC.Types.~~ ('[Servant.API.ContentTypes.JSON] :: [*])
@@ -227,28 +229,28 @@ f27bc7afc111a002141f1bde408fbe7a
                    @ '[Servant.API.ContentTypes.JSON]
                    @ '[Servant.API.ContentTypes.JSON]
                    @~ <'[Servant.API.ContentTypes.JSON]>_N) -}
-e0403abec9b89d6d3890eac71544304b
+202e7f09f1a57edaeb369cbb8e1ace52
   $s$fHasClientm:>4_$cclientWithRoute2 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    Client.$s$fHasClientm:>4_$cclientWithRoute3) -}
-fd4e0b97f53d07f024fb041e5311fd8b
+e30b8f7b6d504e0c8fc026af0bfeecd2
   $s$fHasClientm:>4_$cclientWithRoute3 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("putStepsFromStudent"#) -}
-ba22d33e9192a747460c46d9cd2caaf5
+63f6d7b4986dda728e23dc4e8bf08421
   $s$fHasClientm:>4_$cclientWithRoute5 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    Client.$s$fHasClientm:>4_$cclientWithRoute6) -}
-93c95b6911997b2083a5cc6410b1d7c3
+05618cd4d897a1ee9103f71ca26c6faa
   $s$fHasClientm:>4_$cclientWithRoute6 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("steps"#) -}
-ec3879232a1921200cc0c6fdcf636333
+934d4a063ed430fb5d4f1a12da2c9930
   $s$fHasClientm:>4_$cclientWithRoute8 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    Client.$s$fHasClientm:>4_$cclientWithRoute9) -}
-909d1ab54aa7eafbb8bf6c7c4b12b9c8
+3acc36a441b4364b8aa703debc9a8fac
   $s$fHasClientm:>4_$cclientWithRoute9 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("getStepsFromStudent"#) -}
-e4207419a88fd22c003313ecab9b4611
+8f3ad3c545f6dc216b7db19cd0a3a8da
   $s$fHasClientm:>4_$cclientWithRoute_$s$fHasClientm:>1 ::
     Servant.Client.Core.Internal.HasClient.HasClient
       Servant.Client.Internal.HttpClient.ClientM
@@ -452,7 +454,7 @@ e4207419a88fd22c003313ecab9b4611
                                                                                          200
                                                                                          '[Servant.API.ContentTypes.JSON]
                                                                                          [Types.GenericAST]>_N))) -}
-f7344c2389ec1444065f8cfa8a79937d
+0e17438de704580797ea063d719a091a
   $s$fHasClientm:>4_$cclientWithRoute_$s$fHasClientm:>5 ::
     Servant.Client.Core.Internal.HasClient.HasClient
       Servant.Client.Internal.HttpClient.ClientM
@@ -699,7 +701,7 @@ f7344c2389ec1444065f8cfa8a79937d
                                                                                         200
                                                                                         '[Servant.API.ContentTypes.JSON]
                                                                                         Types.ResponseMsg>_N))) -}
-a986b022136bc9928197bbf0736c68f2
+639fd5729a5bbfe273f5e62e2a762ecf
   $s$fHasClientm:>4_$cclientWithRoute_$s$fHasClientm:>8 ::
     Servant.Client.Core.Internal.HasClient.HasClient
       Servant.Client.Internal.HttpClient.ClientM
@@ -876,7 +878,7 @@ a986b022136bc9928197bbf0736c68f2
                                                                                          200
                                                                                          '[Servant.API.ContentTypes.JSON]
                                                                                          [Types.GenericAST]>_N))) -}
-efc770a6fd9ec3c54d2257c07140ea66
+1440d7fb26e9e4b85da1e7fe192b1883
   $s$fHasClientm:>4_$cclientWithRoute_$s$fHasClientmVerb2 ::
     Servant.Client.Core.Internal.HasClient.HasClient
       Servant.Client.Internal.HttpClient.ClientM
@@ -965,7 +967,7 @@ efc770a6fd9ec3c54d2257c07140ea66
                                       <status>_N
                                       <'[Servant.API.ContentTypes.JSON]>_N
                                       <[Types.GenericAST]>_N))) -}
-c8b10a39b180d7abb8baadee2389222b
+09a9d05bdfb915a5bdd40ebc2dc1db2b
   $s$fHasClientm:>4_$cclientWithRoute_$s$fMimeUnrenderTYPEJSONa ::
     Servant.API.ContentTypes.MimeUnrender
       Servant.API.ContentTypes.JSON Types.ResponseMsg
@@ -986,28 +988,28 @@ c8b10a39b180d7abb8baadee2389222b
                      @ Types.ResponseMsg
                      Types.$fFromJSONResponseMsg
                      eta) -}
-08c188b4191c81daaf63f467b74e5b88
+b45950a9787073bf5dd5d252207040ad
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module
                    Client.$trModule3
                    Client.$trModule1) -}
-f6a949aab0135224e4a76685c85f7f34
+6fc82983e52fe5eef393055480a244ba
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS Client.$trModule2) -}
-d2a2b6b1281f3b8a5150d7e19095080b
+83dd629bb1fba5d928a3b8584843793a
   $trModule2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Client"#) -}
-2dea3b82ea337f7826b7e48b1114ad82
+59c81bd71fc79513afca825b29317dbf
   $trModule3 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS Client.$trModule4) -}
-703f2d22d98838f4dbf18c19cc1f98bc
+9fff9ba16b2e4428a28568e148fa2e96
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: ("Oblig2-INF122-0.1.0.0-8cpJ2QxhiFI3jrCtHwoMCS"#) -}
-167a2e12d93a24f577cb48b4ba9eefac
+     Unfolding: ("Del2-0.1.0.0-4VeKtiHkpZmHZk3lzLXOdF"#) -}
+1ff42aed0d57dfe40d2dd2844e309f1f
   type API =
     ("steps"
      Servant.API.Sub.:> (Servant.API.ReqBody.ReqBody
@@ -1028,12 +1030,12 @@ d2a2b6b1281f3b8a5150d7e19095080b
                                                                                     Servant.API.Sub.:> Servant.API.Verbs.Get
                                                                                                          '[Servant.API.ContentTypes.JSON]
                                                                                                          [Types.GenericAST])))
-bc8af131c90e714c6b289347cabe5af2
+02f17f5c7c53b99e254234c5fc6c9a9f
   api :: Data.Proxy.Proxy Client.API
   {- HasNoCafRefs,
      Unfolding: InlineRule (0, True, True)
                 (Data.Proxy.Proxy @ * @ Client.API) -}
-2e5f556691a1818512ddbe9fca5a30d9
+1031847731a0767ea9004fafe5c6b4c7
   getStepsFromStudent ::
     GHC.Base.Maybe [GHC.Types.Char]
     -> Servant.Client.Internal.HttpClient.ClientM [Types.GenericAST]
@@ -1072,7 +1074,7 @@ bc8af131c90e714c6b289347cabe5af2
                                                                      <200>_N
                                                                      <'[Servant.API.ContentTypes.JSON]>_N
                                                                      <[Types.GenericAST]>_N))) -}
-e98e83e67947949dc4fd2371e61de843
+c611a964746ddc7f174caab133908a96
   getStepsFromStudent1 ::
     Servant.Client.Core.Internal.HasClient.Client
       Servant.Client.Internal.HttpClient.ClientM
@@ -1102,7 +1104,7 @@ e98e83e67947949dc4fd2371e61de843
                                                                   '[Servant.API.ContentTypes.JSON]
                                                                   [Types.GenericAST])))
                    Servant.Client.Core.Internal.Request.defaultRequest) -}
-edad14d220bdd76889709431d618c593
+47a4915e699f05c82dd28d42fc538eb5
   putStepsFromStudent ::
     Types.StepsWithKey
     -> Servant.Client.Internal.HttpClient.ClientM Types.ResponseMsg
@@ -1127,7 +1129,7 @@ edad14d220bdd76889709431d618c593
                                                                     <200>_N
                                                                     <'[Servant.API.ContentTypes.JSON]>_N
                                                                     <Types.ResponseMsg>_N))) -}
-da6765a036ffa8ef33c6f3c15f07793a
+84e11223222e23392c975c9005bb682a
   putStepsFromStudent1 ::
     Servant.Client.Core.Internal.HasClient.Client
       Servant.Client.Internal.HttpClient.ClientM
@@ -1161,7 +1163,7 @@ da6765a036ffa8ef33c6f3c15f07793a
                                                                   '[Servant.API.ContentTypes.JSON]
                                                                   Types.ResponseMsg)))
                    Servant.Client.Core.Internal.Request.defaultRequest) -}
-d80377642a7b0a63b90cebdaf49f061d
+c2b04aa518ffdc1ed0dd2d94b5a80bc9
   query ::
     GHC.Base.String
     -> [Types.Expr]
@@ -1242,7 +1244,7 @@ d80377642a7b0a63b90cebdaf49f061d
                                                                                                             Servant.Client.Core.Internal.Request.ServantError
                                                                                                             GHC.Types.IO>_R
                                                                                                          <Types.ResponseMsg>_N) ; Sym (Servant.Client.Internal.HttpClient.N:ClientM[0]) <Types.ResponseMsg>_N))) -}
-fbf21fd8b7853321c8f06f4ae6d3c8fc
+8a44062401ecfd2869fef35f639aaa56
   run :: GHC.Base.String -> [Types.Expr] -> GHC.Types.IO ()
   {- Arity: 3, Strictness: <L,U><L,1*U><S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -1251,7 +1253,7 @@ fbf21fd8b7853321c8f06f4ae6d3c8fc
                 (<GHC.Base.String>_R
                  ->_R <[Types.Expr]>_R
                  ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
-ba4e3fad16b7766c41e23274c9cd4be5
+db85542eb17bc2dc92e88ed54abad969
   run1 ::
     GHC.Base.String
     -> [Types.Expr]
@@ -1327,21 +1329,21 @@ ba4e3fad16b7766c41e23274c9cd4be5
                         Client.run2
                         GHC.Types.True
                         ipv2 } } }) -}
-d57e295cf5279e2a6d14e593d7978dd9
+92725907c9326541f7a8b49a186763cf
   run2 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# Client.run3) -}
-2c6cc56581699885313868bd35374c2d
+2ccd4c29637f547b57eab6e8084755f7
   run3 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: ("Stored steps successfully on server."#) -}
-882f657afd99c0514ba784e68184dcd9
+     Unfolding: ("Vellykket: Lagret evalueringssteg hos visAST."#) -}
+652fba8e2278aa3f4be251ff3a7085d5
   run4 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# Client.run5) -}
-c5cd07834945f6e933a46ddc5610e07b
+1f4e1c6b2d1d0909b8788fc7afb10a02
   run5 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
      Unfolding: ("Oops, noe gikk galt... Send en mail til ragnhild.aalvik@gmail.com hvor du beskriver feilen."#) -}
-6caa5bebbfb24a5fba179595f90869ac
+e2f9e223b98b2d0279efa94c623e6e10
   run6 :: Servant.Client.Core.Internal.BaseUrl.BaseUrl
   {- Strictness: m,
      Unfolding: (Servant.Client.Core.Internal.BaseUrl.BaseUrl
@@ -1349,16 +1351,16 @@ c5cd07834945f6e933a46ddc5610e07b
                    Client.run8
                    Client.run7
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-59cf9e8d19c0478bf9a38bacd900cf11
+3fd20a3807f1e5cce7d8ad5720a82240
   run7 :: GHC.Types.Int
   {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 80#) -}
-85055de2aa9dfdbc3cf512c781d13dbd
+903f088bd5fdd2114df21a4cae1a1956
   run8 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# Client.run9) -}
-3b40f77ed671c67ddc524ef3788728f5
+9cd0a7a8e8e3a99cb9563ce670a60999
   run9 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("visast-api-prod.herokuapp.com"#) -}
-24d73bd7f79569fb37d128625481b4a3
+785840436aee015c6ad662f9b882a1da
   steps ::
     Types.InputString
     -> Servant.Client.Internal.HttpClient.ClientM [Types.GenericAST]
@@ -1383,7 +1385,7 @@ c5cd07834945f6e933a46ddc5610e07b
                                                                      <200>_N
                                                                      <'[Servant.API.ContentTypes.JSON]>_N
                                                                      <[Types.GenericAST]>_N))) -}
-b2afb3403b3d1166558aeb1d2fc24096
+75d6ce392db4bf6ab8b49c3e4151b5cb
   steps1 ::
     Servant.Client.Core.Internal.HasClient.Client
       Servant.Client.Internal.HttpClient.ClientM
@@ -1417,6 +1419,53 @@ b2afb3403b3d1166558aeb1d2fc24096
                                                                   '[Servant.API.ContentTypes.JSON]
                                                                   [Types.GenericAST])))
                    Servant.Client.Core.Internal.Request.defaultRequest) -}
+414f17f87e53632250695d866b8343b4
+  visualise :: GHC.Base.String -> [Types.Expr] -> GHC.Types.IO ()
+  {- Arity: 3, Strictness: <L,U><L,1*U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Client.visualise1
+                  `cast`
+                (<GHC.Base.String>_R
+                 ->_R <[Types.Expr]>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+5d44a8d80d8d793232eff484066cbf94
+  visualise1 ::
+    GHC.Base.String
+    -> [Types.Expr]
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, Strictness: <L,U><L,1*U><S,U>,
+     Unfolding: (\ (key :: GHC.Base.String)
+                   (steps2 :: [Types.Expr])
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Client.visualise4
+                        GHC.Types.True
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case Client.run1 key steps2 ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case (Web.Browser.openBrowser Client.visualise2)
+                        `cast`
+                      (GHC.Types.N:IO[0] <GHC.Types.Bool>_R)
+                        ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                 GHC.IO.Handle.Text.hPutStr2
+                   GHC.IO.Handle.FD.stdout
+                   (GHC.Show.$fShowBool_$cshow ipv5)
+                   GHC.Types.True
+                   ipv4 } } }) -}
+2a0e9b8f8645dbd84767a87553c277cc
+  visualise2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Client.visualise3) -}
+76a992952a4a36db1681f9ba675f41d0
+  visualise3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("https://vis-ast.netlify.com"#) -}
+2b6ce172208be9c130ca5b9c5b4b2da0
+  visualise4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Client.visualise5) -}
+ec0fe8c2e0ac433c2e3da889135cf94b
+  visualise5 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("Sender uttrykk til visAST... (kan ta litt tid hvis serveren sover)"#) -}
 "SPEC/Client $fFromJSON[] @ GenericAST" [orphan] forall (v :: Data.Aeson.Types.FromJSON.FromJSON
                                                                 Types.GenericAST)
   Data.Aeson.Types.FromJSON.$fFromJSON[] @ Types.GenericAST v

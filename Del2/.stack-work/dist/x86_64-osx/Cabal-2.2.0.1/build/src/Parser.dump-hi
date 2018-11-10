@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2018-10-30 15:32:45.974953 UTC
+2018-11-09 16:37:19.653512 UTC
 
-interface Oblig2-INF122-0.1.0.0-8cpJ2QxhiFI3jrCtHwoMCS:Parser 8043
-  interface hash: 7962650cee90b8fb30563ce99d3ebeba
-  ABI hash: 0be61c4bdbde8f8c7bbb07e166df0ec7
-  export-list hash: bcb61fd0c9bc557dab7927c25c11f042
+interface Del2-0.1.0.0-4VeKtiHkpZmHZk3lzLXOdF:Parser 8044
+  interface hash: 59bddbc93912bdfb74a4483de71e3c04
+  ABI hash: 49dbf7ae48dc6d4346e6e39c720813c6
+  export-list hash: f62a898f7377ebae3c213eae09c119ab
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 8f52f5e5828eb5661f405d8d9ca450ec
   opt_hash: 14e536840aca4e889cad654e6f9b79c1
@@ -26,7 +26,7 @@ package dependencies: StateVar-1.1.1.1 aeson-1.3.1.1 array-0.5.2.0
                       comonad-5.0.4 containers-0.5.11.0 contravariant-1.4.1 cookie-0.4.4
                       data-default-class-0.1.2.0 deepseq-1.4.3.0 distributive-0.5.3
                       dlist-0.8.0.5 exceptions-0.10.0 free-5.0.2 generics-sop-0.3.2.0
-                      ghc-boot-th-8.4.3 ghc-prim-0.5.2.0 hashable-1.2.7.0
+                      ghc-boot-th-8.4.4 ghc-prim-0.5.2.0 hashable-1.2.7.0
                       http-api-data-0.3.8.1 http-client-0.5.13.1 http-media-0.7.1.3
                       http-types-0.12.2 integer-gmp-1.0.2.0 integer-logarithms-1.0.2.2
                       memory-0.14.18 monad-control-1.0.2.3 mtl-2.2.2 network-2.6.3.6
@@ -63,7 +63,7 @@ orphans: generics-sop-0.3.2.0:Generics.SOP.Instances
          text-1.2.3.1:Data.Text.Show
          bytestring-0.10.8.2:Data.ByteString.Builder base-4.11.1.0:GHC.Float
          base-4.11.1.0:GHC.Base
-family instance modules: Oblig2-INF122-0.1.0.0-8cpJ2QxhiFI3jrCtHwoMCS:Types
+family instance modules: Del2-0.1.0.0-4VeKtiHkpZmHZk3lzLXOdF:Types
                          aeson-1.3.1.1:Data.Aeson.Types.Internal
                          attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
                          base-4.11.1.0:Control.Applicative base-4.11.1.0:Data.Complex
@@ -107,8 +107,8 @@ family instance modules: Oblig2-INF122-0.1.0.0-8cpJ2QxhiFI3jrCtHwoMCS:Types
                          generics-sop-0.3.2.0:Generics.SOP.Instances
                          generics-sop-0.3.2.0:Generics.SOP.NP
                          generics-sop-0.3.2.0:Generics.SOP.NS
-                         ghc-boot-th-8.4.3:GHC.ForeignSrcLang.Type
-                         ghc-boot-th-8.4.3:GHC.LanguageExtensions.Type
+                         ghc-boot-th-8.4.4:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.4.4:GHC.LanguageExtensions.Type
                          http-api-data-0.3.8.1:Web.Internal.FormUrlEncoded
                          http-client-0.5.13.1:Network.HTTP.Client
                          monad-control-1.0.2.3:Control.Monad.Trans.Control
@@ -141,14 +141,14 @@ family instance modules: Oblig2-INF122-0.1.0.0-8cpJ2QxhiFI3jrCtHwoMCS:Types
                          vector-0.12.0.1:Data.Vector.Unboxed
                          vector-0.12.0.1:Data.Vector.Unboxed.Base
                          zlib-0.6.2:Codec.Compression.Zlib.Stream
-import  -/  Types 1dea4a9e2a5fd9320e8b4119029235e3
-  exports: a028046eff8517520af661d4fa72fc7f
-  Add d90c9ed5118cbb70b0ca754021d28e87
-  Expr 2241269ddc2725405dfddd27b09f4f0e
-  If 7c4136cde2865a4cf2edac5a3666a011
-  Mult dd08b459bc257697e2832a541cd27586
-  Neg 8061772b7dfe395b47cc42857cf41576
-  Num 0de3d63ae20c5c0ee2d548ed1ead0d70
+import  -/  Types 1678f3972463fc7a4b8bff978eba4ffd
+  exports: 51240acb85db6550610c9974cb2984de
+  Add b28fd1baf7881e2f88ffdfbce4623f05
+  Expr bf1b7b1282f913ed3073870aaeb875eb
+  If 7ae083b9eb53ff5cce6e32466b97256c
+  Mult 764c84667b226fecee577b2364e05ab3
+  Neg 3fe74e6667c8086bc3f1a06179f7f3e6
+  Num 687f769c42b2131838f469634f2ed1a8
 import  -/  base-4.11.1.0:Data.Char 3e89818e2b8ef1a2cc5393163484da72
 import  -/  base-4.11.1.0:Data.Foldable 8ed35c38958063956af33c935ea03444
 import  -/  base-4.11.1.0:GHC.Base 604111500e81281298777e721c75643b
@@ -157,33 +157,33 @@ import  -/  base-4.11.1.0:GHC.Unicode 8234c40b59f035e845832a42e8725a00
 import  -/  base-4.11.1.0:Prelude 0750c25585e2b797cd78291d423d39dd
 import  -/  base-4.11.1.0:Text.Read 6c02630607b565ffcb34e8127673989b
 import  -/  ghc-prim-0.5.2.0:GHC.Classes 122abfcd7450c6c11602933c9ca5f80d
-83fc42336fdbb08ee5257957c8dd5751
+0f55197accd981ddc1bc9b05d75127ec
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module
                    Parser.$trModule3
                    Parser.$trModule1) -}
-89a9ed70c8c707160012d5c7bbd38bdf
+95478888d8e81167f0c3f58e5b3cda01
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS Parser.$trModule2) -}
-d90aa95f2724837adf27702c5b63aae9
+d05fb3cbf25910cb621f719aa5eba19e
   $trModule2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Parser"#) -}
-c473b2177cd7299172b6f255d46d5501
+f1028106a7913a48ba36a4ff27cf50dd
   $trModule3 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS Parser.$trModule4) -}
-5a18bae720cc543c9c0e5def1b619741
+7e182cf04fcd87917c81ed7bb7ff7413
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: ("Oblig2-INF122-0.1.0.0-8cpJ2QxhiFI3jrCtHwoMCS"#) -}
-cd4aeb015b12bbc79dd67c18cb24ae4a
+     Unfolding: ("Del2-0.1.0.0-4VeKtiHkpZmHZk3lzLXOdF"#) -}
+c7b7fe14289079938e0ce3398c80830a
   $wparseExpr ::
     [GHC.Base.String]
     -> (# GHC.Base.Maybe Types.Expr, [GHC.Base.String] #)
   {- Arity: 1, Strictness: <S,1*U>, Inline: [0] -}
-cc1ca43eeacec7319e0b7a25e76bcb80
+d7a409d985a77563b21c0201eee3ca98
   parse :: GHC.Base.String -> GHC.Base.Maybe Types.Expr
   {- Arity: 1, Strictness: <S,1*U>,
      Unfolding: (\ (str :: GHC.Base.String) ->
@@ -194,14 +194,14 @@ cc1ca43eeacec7319e0b7a25e76bcb80
                    GHC.Base.Just expr
                    -> case ww2 of wild1 {
                         [] -> wild : ipv ipv1 -> GHC.Base.Nothing @ Types.Expr } } }) -}
-7cffcee7feb31793467be5e1f0aa29be
+8e198f274a105d8281fd6bf02f21aead
   parseExpr ::
     [GHC.Base.String] -> (GHC.Base.Maybe Types.Expr, [GHC.Base.String])
   {- Arity: 1, Strictness: <S,1*U>m, Inline: [0],
      Unfolding: InlineRule (1, True, False)
                 (\ (w :: [GHC.Base.String]) ->
                  case Parser.$wparseExpr w of ww { (#,#) ww1 ww2 -> (ww1, ww2) }) -}
-50f70f7ed3dd71a248642cd3716436b1
+8d5b284a13bff9ed8153d5bc58391881
   tokenize :: GHC.Base.String -> [GHC.Base.String]
   {- Arity: 1, Strictness: <S,1*U> -}
 vectorised variables:

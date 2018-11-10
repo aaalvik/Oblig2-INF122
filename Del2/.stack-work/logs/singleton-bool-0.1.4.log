@@ -1,8 +1,0 @@
-Configuring singleton-bool-0.1.4...
-clang: warning: argument unused during compilation: '-nopie' [-Wunused-command-line-argument]
-Preprocessing library for singleton-bool-0.1.4..
-Building library for singleton-bool-0.1.4..
-[1 of 1] Compiling Data.Singletons.Bool ( src/Data/Singletons/Bool.hs, .stack-work/dist/x86_64-osx/Cabal-2.2.0.1/build/Data/Singletons/Bool.o )
-ignoring (possibly broken) abi-depends field for packages
-Installing library in /Users/pokki/.stack/snapshots/x86_64-osx/lts-12.14/8.4.3/lib/x86_64-osx-ghc-8.4.3/singleton-bool-0.1.4-8EznQE6dMi2H7lit14Cx2C
-Registering library for singleton-bool-0.1.4..
