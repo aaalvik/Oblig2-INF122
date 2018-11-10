@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: bbba3f5146fc215f68b4ea193eb0f351b76ae51005634119cbc98b489b63f133
+-- hash: 828a18db293fded327ea6634f8141021f4554560273e8afdf1efb232cb735d33
 
 name:           Del2
 version:        0.1.0.0
@@ -24,7 +24,6 @@ library
       Client
       Convert
       Lib
-      Parser
       Types
   other-modules:
       Paths_Del2

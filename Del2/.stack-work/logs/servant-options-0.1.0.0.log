@@ -1,7 +1,0 @@
-Configuring servant-options-0.1.0.0...
-clang: warning: argument unused during compilation: '-nopie' [-Wunused-command-line-argument]
-Preprocessing library for servant-options-0.1.0.0..
-Building library for servant-options-0.1.0.0..
-[1 of 1] Compiling Network.Wai.Middleware.Servant.Options ( src/Network/Wai/Middleware/Servant/Options.hs, .stack-work/dist/x86_64-osx/Cabal-2.2.0.1/build/Network/Wai/Middleware/Servant/Options.o )
-Installing library in /Users/pokki/Documents/workspace/Masteroppgaven-workspace/RepoForStudents-Oblig2/Oblig2-INF122/Del2/.stack-work/install/x86_64-osx/lts-12.17/8.4.4/lib/x86_64-osx-ghc-8.4.4/servant-options-0.1.0.0-FiiBzWTU2LNInLMLHs8Mx1
-Registering library for servant-options-0.1.0.0..
