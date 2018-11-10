@@ -25,7 +25,7 @@ cd Oblig2-INF122
 
 For å få kompilert og kjørt koden i denne mappen (del2/) må du bruke ```stack```, fordi det er brukt noen eksterne pakker. Det betyr at du ikke får testet koden i ghci, men må følge instruksene under for å kompilere og kjøre: 
 
-For å bygge prosjektet/kompilere:
+For å bygge prosjektet/kompilere (dette kan ta lang tid første gangen):
 ```
 cd Del2
 stack build
