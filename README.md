@@ -6,8 +6,7 @@ Du skal skrive all kode til obligen i dette repoet. Hver deloppgave forklarer hv
 
 #### Før du starter må du ha dette installert:
 1. Git (https://www.atlassian.com/git/tutorials/install-git)
-2. Haskell (https://www.haskell.org/platform/) 
-3. Stack (noen får dette gjennom haskell-installasjonen, hvis ikke finner du stack her: https://docs.haskellstack.org/en/stable/README/)
+2. Stack (https://docs.haskellstack.org/en/stable/README/)
 
 #### Installasjon
 
