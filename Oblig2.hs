@@ -32,15 +32,3 @@ takeOneStep expr = undefined
 ---------------------- Oppgave 1.4 ----------------------------------
 mainStep :: Expr -> IO ()
 mainStep expr = undefined 
-
-
------------- FERDIG IMPLEMENTERTE HJELPEFUNKSJONER (IKKE RØR) ------------------  
-tokenize :: String -> [String]
-tokenize [] = [] 
-tokenize (' ':xs) = tokenize xs 
-tokenize s@(x:xs) 
-    | elem x "+*-" = [x] : tokenize xs 
-    | isDigit x = (takeWhile isDigit s) : tokenize (dropWhile isDigit s)
-tokenize ('i':'f':xs) = "if" : tokenize xs 
-tokenize ('t':'h':'e':'n':xs) = "then" : tokenize xs 
-tokenize ('e':'l':'s':'e':xs) = "else" : tokenize xs

@@ -38,14 +38,3 @@ eval :: Expr -> [Expr]
 eval (Num num) = [Num num] 
 eval expr = 
     expr : eval (takeOneStep expr)
-
-
-tokenize :: String -> [String]
-tokenize [] = [] 
-tokenize (' ':xs) = tokenize xs 
-tokenize s@(x:xs) 
-    | elem x "+*-" = [x] : tokenize xs 
-    | isDigit x = (takeWhile isDigit s) : tokenize (dropWhile isDigit s)
-tokenize ('i':'f':xs) = "if" : tokenize xs 
-tokenize ('t':'h':'e':'n':xs) = "then" : tokenize xs 
-tokenize ('e':'l':'s':'e':xs) = "else" : tokenize xs

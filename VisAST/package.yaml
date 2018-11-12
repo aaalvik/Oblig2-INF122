@@ -1,18 +1,10 @@
-name:                Del2
+name:                VisAST
 version:             0.1.0.0
-github:              "githubuser/Del2"
 license:             BSD3
 author:              "Author name here"
 maintainer:          "example@example.com"
 copyright:           "2018 Author name here"
 
-# Metadata used when publishing your package
-# synopsis:            Short description of your package
-# category:            Web
-
-# To avoid duplicated efforts in documentation and dealing with the
-# complications of embedding Haddock markup inside cabal files, it is
-# common to point users to the README.md file.
 
 dependencies:
 - base >= 4.7 && < 5
@@ -21,7 +13,7 @@ library:
   source-dirs: src
 
 executables:
-  Del2-exe:
+  VisAST-exe:
     main:                Main.hs
     source-dirs:         app
     ghc-options:
@@ -29,10 +21,21 @@ executables:
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - Del2
+    - VisAST
+
+  TestParser-exe:
+    main:               TestParser.hs
+    source-dirs:        app 
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -main-is TestParser
+    dependencies:
+    - VisAST
 
 tests:
-  Del2-test:
+  VisAST-test:
     main:                Spec.hs
     source-dirs:         test
     ghc-options:
@@ -40,7 +43,7 @@ tests:
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - Del2
+    - VisAST
 
 dependencies: 
   - base
