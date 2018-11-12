@@ -39,6 +39,6 @@ stack exec TestParser-exe
 
 For å kjøre programmet i oppgave 2.1 – utvidelse av mainStep
 ```
-stack exec Del2-exe 
+stack exec VisAST-exe 
 ```
 
