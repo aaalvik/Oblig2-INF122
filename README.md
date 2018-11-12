@@ -1,6 +1,7 @@
 # Oblig2-INF122
 
-Du skal skrive all kode til obligen i dette repoet. Hver deloppgave forklarer hvilken fil/mappe du skal jobbe i. 
+Oppgaveteksten finner du på Mitt UiB under Oppgaver. 
+Du skal skrive all kode til obligen i din kopi av dette repoet. Hver deloppgave forklarer hvilken fil/mappe du skal jobbe i. 
 
 ## Installasjonsinstrukser
 
