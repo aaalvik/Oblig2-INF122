@@ -31,7 +31,7 @@ cd VisAST
 stack build
 ```
 
-For å kjøre programmet i oppgave 1.1 – testing parseren (fortsatt i mappen VisAST/)
+For å kjøre programmet i oppgave 1.1 – testing av parseren (fortsatt i mappen VisAST/)
 ```
 stack exec TestParser-exe
 ```
