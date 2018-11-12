@@ -1,8 +1,9 @@
 module Main where 
+    -- Mitt-UiB brukernavn:     [DITT BRUKERNAVN HER]
 
 import Data.Char
 import Client (visualise)
-import Types -- Denne importerer datatypen Expr, så du skal ikke lime den inn her 
+import Types -- importerer datatypen Expr, så du skal ikke lime den inn her 
 
 main = mainStep (Add (Num 2) (Num 3)) -- Default expression til å begynne med 
 

@@ -1,4 +1,5 @@
 module Oblig2 where 
+    -- Mitt-UiB brukernavn:     [DITT BRUKERNAVN HER]
 
 import Data.Char
 
