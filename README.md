@@ -21,17 +21,22 @@ cd Oblig2-INF122
 3. Start å kode! Hver deloppgave forklarer hvilken fil/mappe i repoet du skal jobbe i. 
 
 
-## Instrukser til Del 2
+## Instrukser til bruk av visAST
 
-For å få kompilert og kjørt koden i denne mappen (del2/) må du bruke ```stack```, fordi det er brukt noen eksterne pakker. Det betyr at du ikke får testet koden i ghci, men må følge instruksene under for å kompilere og kjøre: 
+For å få kompilert og kjørt koden i mappen VisAST/ må du bruke ```stack```, fordi det er brukt noen eksterne pakker. Det betyr at du ikke får testet koden i ghci, men må følge instruksene under for å kompilere og kjøre: 
 
-For å bygge prosjektet/kompilere (dette kan ta lang tid første gangen):
+For å bygge prosjektet/kompilere (kan ta lang tid første gangen, og må gjøres på nytt for hver endring i koden):
 ```
-cd Del2
+cd VisAST
 stack build
 ```
 
-For å kjøre programmet, altså main-funksjonen i Main.hs – fortsatt i mappen Del2/:
+For å kjøre programmet i oppgave 1.1 – testing av parseren (fortsatt i mappen VisAST/)
+```
+stack exec TestParser-exe
+```
+
+For å kjøre programmet i oppgave 2.1 – utvidelse av mainStep
 ```
 stack exec Del2-exe 
 ```
