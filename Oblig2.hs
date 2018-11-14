@@ -44,9 +44,6 @@ parse' ("-":xs) (a:stack) = parse' xs ((Neg a):stack)            -- Parse Neg, t
 parse' ("else":xs) stack = parseIf xs stack                      -- Parse if-statement
 parse' (x:xs) stack
     | all (isDigit) x = parse' xs ((Num (read x :: Int)):stack)  -- Parse number
-{-parse' inp stack = error $ "Invalid syntax"                      -- Invalid syntax. Print remaining input and stack
-    ++ "\n\tInput: " ++ (concat $ intersperse " " (reverse inp)) 
-    ++ "\n\tStack: " ++ (show stack) -}
 parse' _ _ = error "Illegal expression"
 
 parseIf :: [String] -> [Expr] -> Expr
