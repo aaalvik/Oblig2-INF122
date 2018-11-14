@@ -19,20 +19,34 @@ main = prettyPrint (parse "+ 4 5")
 ---------------------- Oppgave 1.1 ----------------------------------
 parse :: String -> Expr 
 -- Grammar uses prefix notation. Therefore, read from right to left
-parse str = parse' (reverse $ words str) []
+parse str = parse' (reverse $ tokenize str) []
 
--- Reads input. Encountered sub-expressions are parsed, then added to the stack, before continuing.
--- (The function is therefore tail-recursive).
+tokenize :: String -> [String]
+tokenize inp = tokenize' inp []
+
+tokenize' :: String -> [String] -> [String]
+tokenize' [] stack = reverse $ filter (/= []) (map (filter (/= ' ')) stack)
+tokenize' (x:xs) stack
+    | newToken x stack = tokenize' xs ([x]:stack)
+    | otherwise = tokenize' xs (((head stack) ++ [x]):(tail stack))
+
+newToken :: Char -> [String] -> Bool
+newToken x [] = True
+newToken x (y:ys) 
+    | elem x "+*- " = True
+    | otherwise = (isDigit x) /= (all (isDigit) y)
+
 parse' :: [String] -> [Expr] -> Expr
-parse' [] [expr] = expr
-parse' [] stack = error $ "Unresolved expressions on stack: " ++ (show stack)
+parse' [] [expr] = expr                                          -- All input parsed. Return result
 parse' ("*":xs) (a:b:stack) = parse' xs ((Mult a b):stack)       -- Parse Mult, then push it onto the stack
 parse' ("+":xs) (a:b:stack) = parse' xs ((Add a b):stack)        -- Parse Add, then push it onto the stack
 parse' ("-":xs) (a:stack) = parse' xs ((Neg a):stack)            -- Parse Neg, then push it onto the stack
 parse' ("else":xs) stack = parseIf xs stack                      -- Parse if-statement
-parse' inp@(x:xs) stack
+parse' (x:xs) stack
     | all (isDigit) x = parse' xs ((Num (read x :: Int)):stack)  -- Parse number
-    | otherwise = error $ "Invalid syntax: " ++ (intersperse ' ' $ concat $ reverse inp)
+parse' inp stack = error $ "Invalid syntax"                      -- Invalid syntax. Print remaining input and stack
+    ++ "\n\tInput: " ++ (concat $ intersperse " " (reverse inp)) 
+    ++ "\n\tStack: " ++ (show stack) 
 
 parseIf :: [String] -> [Expr] -> Expr
 parseIf xs (else':stack) = parse' xs'' ((If cond then' else'):stack)
