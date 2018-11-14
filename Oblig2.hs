@@ -58,7 +58,7 @@ parseUntil' :: String -> [String] -> [String] -> (Expr,[String])
 parseUntil' e (x:xs) stack
     | x == e = (parse' stack [], xs)
     | otherwise = parseUntil' e xs (stack ++ [x])
-parseUntil' _ [] stack = (parse' stack [], [])
+parseUntil' _ [] _ = error "Illegal expression"                  -- Keyword not found
 
 ---------------------- Oppgave 1.2 ----------------------------------
 prettyPrint :: Expr -> IO () 
@@ -77,23 +77,27 @@ printExpr' name xs t = [' ' | n <- [1..(t*4)]] ++ name ++ "\n" ++ (concat [print
 
 ---------------------- Oppgave 1.3 ----------------------------------
 takeOneStep :: Expr -> Expr 
-takeOneStep (Mult a b)
-    | not $ isNum a = Mult (takeOneStep a) b
-    | not $ isNum b = Mult a (takeOneStep b)
-    | otherwise = Num $ (readNum a) * (readNum b)
-takeOneStep (Add a b) 
-    | not $ isNum a = Add (takeOneStep a) b
-    | not $ isNum b = Add a (takeOneStep b)
-    | otherwise = Num $ (readNum a) + (readNum b)
-takeOneStep (Neg a)
-    | not $ isNum a = Neg $ takeOneStep a
-    | otherwise = Num $ - (readNum a)
+takeOneStep (Mult a b) = eval [a,b] (\[x,y] -> Mult x y) (\[x,y] -> x * y)
+takeOneStep (Add a b) = eval [a,b] (\[x,y] -> Add x y) (\[x,y] -> x + y)
+takeOneStep (Neg a) = eval [a] (\[x] -> Neg x) (\[x] -> -x)
 takeOneStep (Num a) = Num a
-takeOneStep (If c a b) = undefined
+takeOneStep (If c a b)
+    | isNum c = if (readNum c) /= 0 then a else b
+    | otherwise = If (takeOneStep c) a b
+
+eval :: [Expr] -> ([Expr] -> Expr) -> ([Int] -> Int) -> Expr
+eval inp@(x:xs) f g
+    | all (isNum) inp = Num $ g (map (readNum) inp)
+    | otherwise = f $ eval' inp
+
+eval' :: [Expr] -> [Expr]
+eval' (x:xs)
+    | isNum x = [x] ++ (eval' xs)
+    | otherwise = [takeOneStep x] ++ xs
 
 isNum (Num a) = True
 isNum _ = False
-readNum (Num n) = n
+readNum (Num a) = a
 
 ---------------------- Oppgave 1.4 ----------------------------------
 mainStep :: Expr -> IO ()
