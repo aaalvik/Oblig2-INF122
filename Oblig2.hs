@@ -77,8 +77,23 @@ printExpr' name xs t = [' ' | n <- [1..(t*4)]] ++ name ++ "\n" ++ (concat [print
 
 ---------------------- Oppgave 1.3 ----------------------------------
 takeOneStep :: Expr -> Expr 
-takeOneStep expr = undefined 
+takeOneStep (Mult a b)
+    | not $ isNum a = Mult (takeOneStep a) b
+    | not $ isNum b = Mult a (takeOneStep b)
+    | otherwise = Num $ (readNum a) * (readNum b)
+takeOneStep (Add a b) 
+    | not $ isNum a = Add (takeOneStep a) b
+    | not $ isNum b = Add a (takeOneStep b)
+    | otherwise = Num $ (readNum a) + (readNum b)
+takeOneStep (Neg a)
+    | not $ isNum a = Neg $ takeOneStep a
+    | otherwise = Num $ - (readNum a)
+takeOneStep (Num a) = Num a
+takeOneStep (If c a b) = undefined
 
+isNum (Num a) = True
+isNum _ = False
+readNum (Num n) = n
 
 ---------------------- Oppgave 1.4 ----------------------------------
 mainStep :: Expr -> IO ()
