@@ -44,9 +44,10 @@ parse' ("-":xs) (a:stack) = parse' xs ((Neg a):stack)            -- Parse Neg, t
 parse' ("else":xs) stack = parseIf xs stack                      -- Parse if-statement
 parse' (x:xs) stack
     | all (isDigit) x = parse' xs ((Num (read x :: Int)):stack)  -- Parse number
-parse' inp stack = error $ "Invalid syntax"                      -- Invalid syntax. Print remaining input and stack
+{-parse' inp stack = error $ "Invalid syntax"                      -- Invalid syntax. Print remaining input and stack
     ++ "\n\tInput: " ++ (concat $ intersperse " " (reverse inp)) 
-    ++ "\n\tStack: " ++ (show stack) 
+    ++ "\n\tStack: " ++ (show stack) -}
+parse' _ _ = error "Illegal expression"
 
 parseIf :: [String] -> [Expr] -> Expr
 parseIf xs (else':stack) = parse' xs'' ((If cond then' else'):stack)
@@ -64,8 +65,18 @@ parseUntil' _ [] stack = (parse' stack [], [])
 
 ---------------------- Oppgave 1.2 ----------------------------------
 prettyPrint :: Expr -> IO () 
-prettyPrint expr = undefined 
+prettyPrint expr = do
+    putStrLn $ printExpr expr 0
 
+printExpr :: Expr -> Int -> String
+printExpr (Mult a b) t = printExpr' "Mult" [a,b] t
+printExpr (Add a b) t = printExpr' "Add" [a,b] t
+printExpr (Neg a) t = printExpr' "Neg" [a] t
+printExpr e@(Num a) t = printExpr' (show e) [] t
+printExpr (If c a b) t = printExpr' "If" [c,a,b] t
+
+printExpr' :: String -> [Expr] -> Int -> String
+printExpr' name xs t = [' ' | n <- [1..(t*4)]] ++ name ++ "\n" ++ (concat [printExpr x (t+1) | x <- xs])
 
 ---------------------- Oppgave 1.3 ----------------------------------
 takeOneStep :: Expr -> Expr 
