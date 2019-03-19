@@ -44,8 +44,7 @@ instance ToJSON InputString
 instance FromJSON InputString 
 
 
-data StepsWithKey = StepsWithKey { 
-    evalSteps :: [GenericAST], 
-    key :: String 
+data Steps = Steps { 
+    evalSteps :: [GenericAST]
 } deriving (Show, Generic)
-instance ToJSON StepsWithKey
+instance ToJSON Steps

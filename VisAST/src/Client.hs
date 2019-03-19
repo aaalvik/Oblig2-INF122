@@ -23,19 +23,19 @@ visualise key steps = do
     openBrowser "https://vis-ast.netlify.com" >>= print 
 
 
-type API = "steps" :> ReqBody '[JSON] InputString :> Post '[JSON] [GenericAST]
-      :<|> "putStepsFromStudent" :> ReqBody '[JSON] StepsWithKey :> Post '[JSON] ResponseMsg
-      :<|> "getStepsFromStudent" :> QueryParam "studentKey" String :> Get '[JSON] [GenericAST]
+type API = "easy" :> ReqBody '[JSON] InputString :> Post '[JSON] [GenericAST]
+    :<|> "advanced" :> Capture "studentKey" String :> ReqBody '[JSON] Steps :> Put '[JSON] ResponseMsg
+    :<|> "advanced" :> QueryParam "studentKey" String :> Get '[JSON] [GenericAST]
 
 api :: Proxy API
 api = Proxy
 
-steps :<|> putStepsFromStudent :<|> getStepsFromStudent = client api
+easy :<|> advancedPut :<|> advancedGet = client api
 
 
 query :: String -> [Expr] -> ClientM ResponseMsg 
 query key steps = do 
-    response <- putStepsFromStudent (StepsWithKey { evalSteps = (map toGeneric steps), key = key })
+    response <- advancedPut key (Steps { evalSteps = (map toGeneric steps) })
     return response 
 
 
