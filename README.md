@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/155850846.svg)](https://zenodo.org/badge/latestdoi/155850846)
+
 # Example client for visAST
 This repo was used as part of an assignment in a functional programming course at University of Bergen. The students where instructed to write their own parser and evaluator function for a small expression language, and to call the function `visualise` to store ASTs on the server, for using visAST's Advanced mode.
 
