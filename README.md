@@ -1,4 +1,7 @@
-# Oblig2-INF122
+# Example client for visAST
+This repo was used as part of an assignment in a functional programming course at University of Bergen. The students where instructed to write their own parser and evaluator function for a small expression language, and to call the function `visualise` to store ASTs on the server, for using visAST's Advanced mode.
+
+# Below are instructions (in Norwegian) given to the students in the assignment
 
 Oppgaveteksten finner du på Mitt UiB under Oppgaver. 
 Du skal skrive all kode til obligen i din kopi av dette repoet. Hver deloppgave forklarer hvilken fil/mappe du skal jobbe i. 
@@ -15,7 +18,7 @@ Du skal skrive all kode til obligen i din kopi av dette repoet. Hver deloppgave 
 
 2. Klon repoet:
 ```
-git clone https://github.com/aaalvik/Oblig2-INF122.git
+git clone https://github.com/aaalvik/visast-client-example.git
 cd Oblig2-INF122
 ```
 
@@ -41,4 +44,3 @@ For å kjøre programmet i oppgave 2.1 – utvidelse av mainStep
 ```
 stack exec VisAST-exe 
 ```
-
