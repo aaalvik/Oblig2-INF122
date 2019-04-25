@@ -1,24 +1,9 @@
-{-# LANGUAGE DataKinds #-}
 {-# LANGUAGE DeriveGeneric #-}
-{-# LANGUAGE TypeOperators #-}
 
 module Types where
 
 import Data.Aeson
-import Data.Proxy
 import GHC.Generics
-import Network.HTTP.Client (newManager, defaultManagerSettings)
-import Servant.API
-import Servant.Client
-
-data Expr 
-    = Num Int 
-    | Add Expr Expr 
-    | Mult Expr Expr 
-    | Neg Expr 
-    | If Expr Expr Expr 
-    deriving (Eq, Show, Read, Generic)
-
 
 data GenericAST = GenericAST {
     name :: Name,  
@@ -26,7 +11,6 @@ data GenericAST = GenericAST {
 } deriving (Eq, Show, Generic)
 instance ToJSON GenericAST  
 instance FromJSON GenericAST 
-
 
 type Name = String 
 

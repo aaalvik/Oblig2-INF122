@@ -19,17 +19,6 @@ executables:
     dependencies:
     - VisAST
 
-  TestParser-exe:
-    main:               TestParser.hs
-    source-dirs:        app 
-    ghc-options:
-    - -threaded
-    - -rtsopts
-    - -with-rtsopts=-N
-    - -main-is TestParser
-    dependencies:
-    - VisAST
-
 tests:
   VisAST-test:
     main:                Spec.hs
