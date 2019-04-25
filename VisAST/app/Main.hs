@@ -54,7 +54,7 @@ repTest = do
 
 -- getConstructorName (M1 {unM1 = R1 (M1 val)}) = conName val
 -- getConstructorName (M1 {unM1 = L1 val}) = conName val
---getConstructorName _ = 0
+-- getConstructorName _ = 0
 --                  M1 {unM1 = R1 (M1 {unM1 = M1 {unM1 = K1 {unK1 = 1}}})}
 
 

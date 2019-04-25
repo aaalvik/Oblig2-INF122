@@ -1,6 +1,8 @@
-{-# LANGUAGE DefaultSignatures, DeriveGeneric, TypeOperators, FlexibleContexts #-}
+{-# LANGUAGE DefaultSignatures, DeriveGeneric, TypeOperators, FlexibleContexts, FlexibleInstances #-}
+module TestGenericAST where 
+
 import GHC.Generics
--- import Data.Bits 
+
 
 data GenericAST = GenericAST {
     name :: Name,
@@ -14,7 +16,7 @@ class Generalise a where
     toGeneric :: a -> GenericAST
 
     default toGeneric :: (Generic a, GGeneralise (Rep a)) => a -> GenericAST
-    toGeneric a = head $ gtoGeneric (from a)
+    toGeneric = head . gtoGeneric . from
 
 
 -- Need to make it a list, because of children 
@@ -23,7 +25,7 @@ class GGeneralise f where
 
 -- | Unit: User for constructors without arguments 
 instance GGeneralise U1 where 
-    gtoGeneric U1 = [GenericAST "Unit" []]
+    gtoGeneric U1 = [] -- [GenericAST "Unit" []]
 
 -- | Constants, additional parameters and recursion of kind *
 instance (GGeneralise a, GGeneralise b) => GGeneralise (a :*: b) where
@@ -37,28 +39,54 @@ instance (GGeneralise a, GGeneralise b) => GGeneralise (a :+: b) where
 
 -- | Sums: encode choice between constructors
 -- HER MÅ JEG LAGRE NAVNET PÅ KONSTRUKTØREN 
-instance (GGeneralise a) => GGeneralise (M1 i c a) where
+
+-- Datatype
+instance (GGeneralise a) => GGeneralise (M1 D c a) where
     gtoGeneric (M1 x) = [GenericAST nodeName children]
         where 
             nodeName = "DummyNameM1"
             children = gtoGeneric x
 
+-- Constructor Metadata
+instance (GGeneralise a, Constructor c) => GGeneralise (M1 C c a) where
+    gtoGeneric (M1 x) = [GenericAST nodeName children]
+        where 
+            m = (undefined :: t c a b)
+            nodeName = conName m
+            children = gtoGeneric x
+
+-- Selector Metadata
+instance (GGeneralise a) => GGeneralise (M1 S c a) where
+    gtoGeneric (M1 x) = [GenericAST nodeName children]
+        where 
+            nodeName = "DummyNameM1"
+            children = gtoGeneric x
+
+
+
 -- | Products: encode multiple arguments to constructors
 -- DETTE ER KONSTANTER, som feks i Num 1, så er dette 1
 instance (Generalise a) => GGeneralise (K1 i a) where
-    gtoGeneric (K1 x) = [GenericAST nodeName []]
+    gtoGeneric (K1 x) = [GenericAST nodeName [toGeneric x]]
         where nodeName = "DummyNameValue " -- ++ somethingWith x
 
 
 
 -------- Example 
--- data Tree a = Leaf | Node a (Tree a) (Tree a) deriving (Show, Generic)
-data Tree = Leaf | Node String (Tree) (Tree) deriving (Show, Generic)
-
--- instance (Generalise a) => Generalise (Tree a)
+data Tree = Leaf | Node Int (Tree) (Tree) deriving (Show, Generic)
 
 instance Generalise Tree
 
-testToGeneric = do 
-    let tree = Leaf :: Tree 
+instance Generalise Int where
+    toGeneric i = GenericAST (show i) []
+-- du må lage alle disse primitive typene, hvordan skal de representeres (string, char, bool, ...)
+
+test = do 
+    -- let tree = Leaf :: Tree
+    let tree = Node 4 Leaf Leaf :: Tree
+
+    print (from tree)
+    line 
     print (toGeneric tree :: GenericAST)
+
+line = putStrLn ""
