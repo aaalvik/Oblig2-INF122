@@ -16,7 +16,7 @@ import Web.Browser (openBrowser)
 -- Public function for students to use to trigger visAST
 visualise :: String -> [GenericAST] -> IO () 
 visualise key steps = do 
-    putStrLn "Sending trees to visAST... (may take some time if the server is sleeping)"
+    putStrLn "Sending trees to visAST..."
     run key steps 
     openBrowser "https://vis-ast.netlify.com" >>= print 
 
@@ -26,10 +26,7 @@ type API = "easy" :> ReqBody '[JSON] InputString :> Post '[JSON] [GenericAST]
     :<|> "advanced" :> QueryParam "studentKey" String :> Get '[JSON] [GenericAST]
 
 
-api :: Proxy API
-api = Proxy
-
-easy :<|> advancedPut :<|> advancedGet = client api
+easy :<|> advancedPut :<|> advancedGet = client (Proxy :: Proxy API)
 
 
 run :: String -> [GenericAST] -> IO () 
@@ -42,4 +39,4 @@ run key steps = do
         Left err -> 
             putStrLn "Oops, something went wrong..."
         Right responseStr -> 
-            putStrLn $ "Vellykket: Stored evaluation steps at visAST."
+            putStrLn $ "Success: Evaluation steps stored at visAST."
