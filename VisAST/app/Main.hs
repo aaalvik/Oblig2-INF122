@@ -22,7 +22,7 @@ main = do
     str <- getLine 
     case parse str of 
         Just expr -> 
-            visualise "generic" [toGeneric expr] 
+            visualise "generic" [expr] 
         Nothing -> 
             putStrLn "Parsing failed"
 

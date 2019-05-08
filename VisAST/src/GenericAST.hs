@@ -67,12 +67,3 @@ instance Generalise String where
 
 instance Generalise Char where 
     toGeneric c = GenericAST [c] []
-
--- OLD toGeneric FUNCTION:
--- toGeneric :: Expr -> GenericAST 
--- toGeneric n@(Num _) = GenericAST (show n) []
--- toGeneric (Add e1 e2) = GenericAST "Add" [toGeneric e1, toGeneric e2] 
--- toGeneric (Mult e1 e2) = GenericAST "Mult" [toGeneric e1, toGeneric e2]
--- toGeneric (Neg e) = GenericAST "Neg" [toGeneric e]
--- toGeneric (If cond eThen eElse) = 
---     GenericAST "If" [toGeneric cond, toGeneric eThen, toGeneric eElse]

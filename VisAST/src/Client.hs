@@ -1,5 +1,6 @@
 {-# LANGUAGE DataKinds #-}
 {-# LANGUAGE TypeOperators #-}
+{-# LANGUAGE DeriveGeneric #-}
 
 module Client where
 
@@ -11,19 +12,19 @@ import Servant.API
 import Servant.Client
 import Types
 import Web.Browser (openBrowser)
+import GenericAST
 
-
--- Public function for students to use to trigger visAST
-visualise :: String -> [GenericAST] -> IO () 
+-- Public function to trigger visAST
+visualise :: Generalise a => String -> [a] -> IO () 
 visualise key steps = do 
     putStrLn "Sending trees to visAST..."
-    run key steps 
+    run key (map toGeneric steps) 
     openBrowser "https://vis-ast.netlify.com" >>= print 
 
 
 type API = "easy" :> ReqBody '[JSON] InputString :> Post '[JSON] [GenericAST]
-    :<|> "advanced" :> Capture "studentKey" String :> ReqBody '[JSON] Steps :> Put '[JSON] ResponseMsg
-    :<|> "advanced" :> QueryParam "studentKey" String :> Get '[JSON] [GenericAST]
+    :<|> "advanced" :> Capture "lookupKey" String :> ReqBody '[JSON] Steps :> Put '[JSON] ResponseMsg
+    :<|> "advanced" :> QueryParam "lookupKey" String :> Get '[JSON] [GenericAST]
 
 
 easy :<|> advancedPut :<|> advancedGet = client (Proxy :: Proxy API)
