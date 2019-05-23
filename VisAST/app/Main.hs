@@ -38,6 +38,7 @@ module Main where
     eval (Val x) = [Val x]
     eval exp = exp : eval (takeOneStep exp)
 
+    
     takeOneStep :: BoolExp -> BoolExp 
     takeOneStep (And (Val x) (Val y)) = 
         Val $ x && y
