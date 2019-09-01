@@ -2,7 +2,11 @@
 {-# LANGUAGE TypeOperators #-}
 {-# LANGUAGE DeriveGeneric #-}
 
-module Client where
+module Client 
+    (module GenericAST
+    , module GHC.Generics
+    , visualise) 
+where
 
 import Data.Aeson
 import Data.Proxy

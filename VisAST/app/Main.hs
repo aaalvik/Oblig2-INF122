@@ -2,11 +2,8 @@
 
 module Main where 
 
+import Client
 import Data.Char
-import Client (visualise)
-import Types
-import GHC.Generics
-import GenericAST
 
 data Expr 
     = Num Int 
